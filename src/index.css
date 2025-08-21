@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@100;200;300;400;500;600&family=Pinyon+Script&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Common colors */
+  --color-gold: #d4af37;
+  --color-dark-gold: #b08f26;
+  --color-black: #111111;
+  --color-white: #ffffff;
+  
+  /* Dermatology Clinic colors */
+  --color-clinic-bg: #ffffff;
+  --color-clinic-secondary: #f5e9dc;
+  --color-clinic-accent: #7a5e46;
+  
+  /* Wellness Lounge colors */
+  --color-lounge-bg: #f9f5f1;
+  --color-lounge-secondary: #e7d9ea;
+  --color-lounge-accent: #694d85;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply font-montserrat text-black antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-cormorant font-light tracking-wider;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-block px-8 py-3 text-sm font-light tracking-wide transition-all duration-300;
+  }
+  
+  .btn-clinic {
+    @apply border border-[#7a5e46] text-[#7a5e46] hover:bg-[#7a5e46] hover:text-white;
+  }
+  
+  .btn-lounge {
+    @apply border border-[#694d85] text-[#694d85] hover:bg-[#694d85] hover:text-white;
+  }
+  
+  .btn-gold {
+    @apply border border-[#d4af37] text-[#d4af37] hover:bg-[#d4af37] hover:text-white;
+  }
+  
+  .container-custom {
+    @apply container mx-auto px-4 md:px-8 lg:px-16;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .service-card {
+    @apply relative overflow-hidden rounded bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md;
+  }
+
+.text-gold-gradient {
+  background: linear-gradient(90deg, #d6b56c, #cfa753, #e1c485);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+  .animated-underline {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full;
+  }
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-in forwards;
+}
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Loading animation */
+@keyframes loadingPulse {
+  0% { transform: scale(0.95); opacity: 0.5; }
+  50% { transform: scale(1.05); opacity: 0.8; }
+  100% { transform: scale(0.95); opacity: 0.5; }
+}
+
+.loading-pulse {
+  animation: loadingPulse 2s ease-in-out infinite;
+}
+
+/* Hover transitions */
+.hover-scale {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Smooth section transitions */
+.section-transition {
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-dark-gold);
+}

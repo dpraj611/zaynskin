@@ -13,6 +13,7 @@ const EMSculpt: React.FC = () => {
     document.title = 'Fat Burning & Muscle Toning | Zayn Skin Clinic Pune';
     
     // Update meta description
+    // lol
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute('content', 'Looking for non-surgical fat loss or muscle toning? Try body contouring at Zayn Skin Clinic, Pune. Safe, effective, and no downtime—book now!');

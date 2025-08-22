@@ -22,7 +22,7 @@ Think of it as the digital lounge where skincare meets tech.
 ---
 
 ## 🌐 Live Demo  
-👉 [Check out the Website](https://zaynskin.netlify.app)  
+👉 [Check out the Website](https://zaynskinclinic.com)  
 
 ---
 

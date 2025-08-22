@@ -1072,14 +1072,9 @@ From cellular-level therapies to mind-body technologies, everything is designed 
                   title="ZAYN Wellness Lounge Location"
                 ></iframe>
               </div>
-              
+                
               {/* Overlay with lounge info */}
-              <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg max-w-xs">
-                <h4 className="font-pinyon text-lg mb-2 text-lounge-accent">ZAYN Wellness Lounge</h4>
-                <p className="text-sm text-gray-600">
-                  Your sanctuary for luxury wellness and transformative treatments
-                </p>
-              </div>
+              
             </motion.div>
           </div>
         </div>

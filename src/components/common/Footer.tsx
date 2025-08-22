@@ -44,7 +44,7 @@ const Footer: React.FC<FooterProps> = ({ variant }) => {
             <h4 className="text-lg font-light mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link to={variant === 'clinic' ? '/dermatology' : '/wellness'} className="animated-underline">
+                <Link to="/" className="animated-underline">
                   Home
                 </Link>
               </li>
@@ -64,7 +64,14 @@ const Footer: React.FC<FooterProps> = ({ variant }) => {
                 </a>
               </li>
               <li>
-                <a href="#" className="animated-underline">Book Appointment</a>
+                <a 
+                  href="https://www.practo.com/pune/clinic/zayn-skin-hair-and-laser-clinic-camp/overview"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="animated-underline"
+                >
+                  Book Appointment
+                </a>
               </li>
             </ul>
           </div>
@@ -101,7 +108,7 @@ const Footer: React.FC<FooterProps> = ({ variant }) => {
         </div>
         
         <div className="flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0">
-          <p>&copy; {new Date().getFullYear()} Dermis & Lotus. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} ZAYN Skin and Hair Clinic. All rights reserved.</p>
           <p className="italic">Developed by Dhruv Prajapati</p>
         </div>
       </div>

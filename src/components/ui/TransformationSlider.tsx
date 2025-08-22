@@ -54,7 +54,7 @@ const TransformationSlider: React.FC<TransformationSliderProps> = ({ transformat
                 <img
                   src={item.before}
                   alt="Before transformation"
-                  className="w-full h-48 object-cover rounded-lg"
+                  className="w-full h-48 object-contain rounded-lg bg-gray-50"
                 />
               </div>
               <div>
@@ -62,7 +62,7 @@ const TransformationSlider: React.FC<TransformationSliderProps> = ({ transformat
                 <img
                   src={item.after}
                   alt="After transformation"
-                  className="w-full h-48 object-cover rounded-lg"
+                  className="w-full h-48 object-contain rounded-lg bg-gray-50"
                 />
               </div>
             </div>

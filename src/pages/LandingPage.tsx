@@ -614,14 +614,6 @@ const LandingPage: React.FC = () => {
                     services: ["Emsella for Women (Post-pregnancy, incontinence)", "Emsella for Men (Prostate health, bladder control)", "Emsella Treatment Cost – Affordable Packages Available", "Non-invasive with immediate results"]
                   },
                   {
-                    title: "Non-Invasive & Aesthetic Body Contouring",
-                    services: ["Emsculpt Treatment – Tones muscle & burns fat simultaneously", "EMS Body Sculpting for abs, arms, thighs, and butt", "EM Slim & EM Sculpting Near Me for localized inch loss", "Emsculpt for Weight Loss & Muscle Toning"]
-                  },
-                  {
-                    title: "Strengthening the Pelvic Floor Using Emsella",
-                    services: ["Emsella for Women (Post-pregnancy, incontinence)", "Emsella for Men (Prostate health, bladder control)", "Emsella Treatment Cost – Affordable Packages Available", "Non-invasive with immediate results"]
-                  },
-                  {
                     title: "Detox & Wellness with Infrared Sauna",
                     services: ["Infrared Sauna for Weight Loss & Relaxation", "Infrared Therapy for Pain & Inflammation Relief", "Best Infrared Sauna Experience Near You", "Fat-burning, detoxing, and stress relief"]
                   },

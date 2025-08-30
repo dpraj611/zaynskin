@@ -725,6 +725,119 @@ From cellular-level therapies to mind-body technologies, everything is designed 
         </div>
       </section>
 
+      {/* Weight Loss Section */}
+      <section className="py-16 md:py-20 bg-gradient-to-br from-gold/5 via-white to-lounge-accent/5">
+        <div className="container-custom">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              {/* Content */}
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+                className="relative z-10"
+              >
+                <div className="mb-6">
+                  <span className="inline-flex items-center bg-gradient-to-r from-gold to-yellow-400 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+                    <Target className="w-4 h-4 mr-2" />
+                    Specialized Program
+                  </span>
+                </div>
+                
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-pinyon font-light text-lounge-accent mb-6 leading-tight">
+                  Best Weight Loss Clinic in Pune
+                </h2>
+                
+                <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
+                  Transform your body with our medically-supervised weight loss programs. We combine advanced technology, 
+                  personalized nutrition, and expert guidance for lasting results.
+                </p>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-gold flex-shrink-0" />
+                    <span className="text-gray-700">Doctor-led care</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-gold flex-shrink-0" />
+                    <span className="text-gray-700">Non-surgical options</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-gold flex-shrink-0" />
+                    <span className="text-gray-700">Customized programs</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-gold flex-shrink-0" />
+                    <span className="text-gray-700">Proven results</span>
+                  </div>
+                </div>
+                
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button 
+                    to="/weight-loss"
+                    variant="gold"
+                    className="inline-flex items-center px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  >
+                    <Target className="w-5 h-5 mr-2" />
+                    Explore Weight Loss Programs
+                  </Button>
+                  <button
+                    onClick={() => handleWhatsAppClick("Hi! I'm interested in your weight loss programs. Can you provide more information about the treatments and pricing?")}
+                    className="inline-flex items-center px-8 py-4 text-lg font-semibold bg-white text-lounge-accent border-2 border-lounge-accent rounded-lg hover:bg-lounge-accent hover:text-white transition-all duration-300 shadow-lg"
+                  >
+                    <MessageCircle className="w-5 h-5 mr-2" />
+                    Get Consultation
+                  </button>
+                </div>
+              </motion.div>
+
+              {/* Image */}
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="relative"
+              >
+                <div className="relative overflow-hidden rounded-3xl shadow-luxury">
+                  <img
+                    src="https://images.pexels.com/photos/6975474/pexels-photo-6975474.jpeg"
+                    alt="Weight Loss Transformation"
+                    className="w-full h-[400px] md:h-[500px] object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-lounge-accent/30 via-transparent to-transparent"></div>
+                  
+                  {/* Floating stats */}
+                  <div className="absolute bottom-6 left-6 right-6">
+                    <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
+                      <div className="grid grid-cols-3 gap-4 text-center">
+                        <div>
+                          <div className="text-2xl font-pinyon text-lounge-accent">95%</div>
+                          <div className="text-xs text-gray-600">Success Rate</div>
+                        </div>
+                        <div>
+                          <div className="text-2xl font-pinyon text-lounge-accent">1000+</div>
+                          <div className="text-xs text-gray-600">Transformations</div>
+                        </div>
+                        <div>
+                          <div className="text-2xl font-pinyon text-lounge-accent">0</div>
+                          <div className="text-xs text-gray-600">Surgery Required</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Decorative elements */}
+                <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-gold/20 to-lounge-accent/20 rounded-full blur-xl"></div>
+                <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-br from-lounge-accent/20 to-gold/20 rounded-full blur-xl"></div>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Before & After Section */}
       <section id="gallery" className="py-16 md:py-20 bg-gradient-to-br from-lounge-bg to-lounge-secondary">
         <div className="container-custom">

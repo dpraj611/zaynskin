@@ -24,33 +24,58 @@ const HairTransplant: React.FC = () => {
   const features = [
     {
       icon: <Microscope className="text-clinic-accent" size={24} />,
-      title: "Custom FUE Technique",
-      description: "Personalized Follicular Unit Extraction tailored to your unique hair pattern and facial structure"
+      title: "Natural-Looking Hairline",
+      description: "Expertly crafted to blend seamlessly with your face, ensuring a result that looks completely natural"
     },
     {
       icon: <Award className="text-clinic-accent" size={24} />,
-      title: "International Grade Instruments",
-      description: "State-of-the-art equipment sourced from Barcelona, USA, and other leading medical centers worldwide"
+      title: "Advanced Technology",
+      description: "From FUE (Follicular Unit Extraction) to FUT, we apply world-class standards for optimal results"
     },
     {
       icon: <Shield className="text-clinic-accent" size={24} />,
-      title: "Growth Solution Storage",
-      description: "Grafts preserved in fortified growth solution to maximize survival and ensure optimal results"
+      title: "Painless Experience",
+      description: "Minimal discomfort, reduced healing time, and superior outcomes with modern techniques"
     },
     {
-      icon: <Users className="text-clinic-accent" size={24} />,
-      title: "Dr. Sajid's Exclusive Design",
-      description: "Hairlines exclusively designed by Dr. Sajid, customized to complement your facial features"
+      icon: <Clock className="text-clinic-accent" size={24} />,
+      title: "Long-Lasting Results",
+      description: "Your own hair, growing naturally for life - a permanent solution to hair loss"
     }
   ];
 
-  const advantages = [
-    "Future-proof design that looks natural after 10-15 years",
-    "Laser-assisted hairline design for precision",
-    "Each case individually crafted for natural appearance",
-    "Sits beautifully with your facial structure",
-    "International standard protocols",
-    "Advanced graft preservation techniques"
+  const procedures = [
+    {
+      title: "Follicular Unit Extraction (FUE)",
+      description: "A minimally invasive procedure where individual hair follicles are extracted and transplanted. This ensures fast recovery and natural results."
+    },
+    {
+      title: "Follicular Unit Transplantation (FUT)",
+      description: "Also known as the strip method, FUT is ideal for individuals requiring greater coverage in a single session."
+    },
+    {
+      title: "PRP Therapy (Platelet-Rich Plasma)",
+      description: "A non-surgical treatment that stimulates hair growth and strengthens existing follicles using your body's own healing properties."
+    },
+    {
+      title: "Non-Surgical Treatments",
+      description: "For patients not ready for transplant, we offer laser therapy, mesotherapy, and advanced medications for effective hair loss treatment."
+    }
+  ];
+
+  const whyChooseUs = [
+    "Experienced Experts with years of natural hairline restoration expertise",
+    "State-of-the-art infrastructure with modern equipment and advanced techniques",
+    "Personalized attention - every scalp is unique, and we treat each case individually",
+    "Transparent pricing with honest consultations and no hidden costs",
+    "Extremely high success rate with countless satisfied patients achieving natural results"
+  ];
+
+  const whoCanBenefit = [
+    "Men with receding hairlines looking to appear younger",
+    "Women experiencing hair loss due to hormonal changes or stress",
+    "Individuals with bald patches or thinning crowns caused by genetics",
+    "Those who have tried other treatments without achieving desired results"
   ];
 
   const toggleService = (serviceId: string) => {
@@ -100,10 +125,10 @@ const HairTransplant: React.FC = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h1 className="text-4xl md:text-5xl font-cormorant font-light text-clinic-accent mb-6 leading-tight">
-                  Signature FUE Hair Transplant
+                  Hair Transplant in Pune – Zayn Skin Clinic
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed mb-8">
-                  Experience the pinnacle of hair restoration with our custom FUE technique, featuring international-grade instruments and Dr. Sajid's exclusive hairline design philosophy.
+                  Hair on your head is more than just appearance—it's your confidence, personality, and identity. At Zayn Skin Clinic, we understand how hair loss affects your self-esteem and relationships. That's why we offer advanced hair transplant solutions in Pune that deliver natural, permanent results and restore the confidence you deserve.
                 </p>
                 <button
                   onClick={() => handleWhatsAppClick("Hi! I'm interested in learning more about the Custom FUE Hair Transplant procedure. Can you provide more information about the process, pricing, and availability?")}
@@ -122,7 +147,7 @@ const HairTransplant: React.FC = () => {
               >
                 <img
                   src="/images/ht.jpg"
-                  alt="Custom FUE Hair Transplant"
+                  alt="Hair Transplant in Pune"
                   className="rounded-2xl shadow-luxury w-full"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
@@ -142,7 +167,7 @@ const HairTransplant: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="text-3xl md:text-4xl font-cormorant font-light text-clinic-accent text-center mb-16"
           >
-            Why Choose Our Signature FUE Technique
+            The Zayn Skin Clinic Promise
           </motion.h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -174,93 +199,86 @@ const HairTransplant: React.FC = () => {
         </div>
       </section>
 
-      {/* Dr. Sajid's Approach Section */}
+      {/* Why Hair Loss Section */}
       <section className="py-20 bg-gradient-to-br from-clinic-bg to-clinic-secondary">
         <div className="container-custom">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="text-3xl md:text-4xl font-cormorant font-light text-clinic-accent mb-8"
+              className="text-3xl md:text-4xl font-cormorant font-light text-clinic-accent mb-8 text-center"
             >
-              Dr. Sajid's Exclusive Design Philosophy
+              Understanding Hair Loss – You're Not Alone
             </motion.h2>
-            
+
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-lg text-gray-700 leading-relaxed mb-12"
+              className="text-lg text-gray-700 leading-relaxed mb-8 text-center"
             >
-              Every hairline is a work of art, exclusively designed by Dr. Sajid to complement your unique facial features. 
-              Our approach ensures that your hair transplant not only looks natural today but will continue to appear 
-              authentic and age-appropriate for decades to come.
+              Millions of people experience hair loss due to heredity, stress, lifestyle, or medical conditions. Whether you're in your 20s or 40s, dealing with receding hairlines, bald patches, or thinning crowns—you don't have to accept it.
             </motion.p>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="text-center"
-              >
-                <div className="w-16 h-16 bg-clinic-accent text-white rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Microscope size={24} />
-                </div>
-                <h3 className="text-lg font-cormorant font-medium text-clinic-accent mb-2">
-                  Laser-Assisted Design
-                </h3>
-                <p className="text-sm text-gray-600">
-                  Precision hairline mapping using advanced laser technology
-                </p>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                className="text-center"
-              >
-                <div className="w-16 h-16 bg-clinic-accent text-white rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Clock size={24} />
-                </div>
-                <h3 className="text-lg font-cormorant font-medium text-clinic-accent mb-2">
-                  Future-Proof Results
-                </h3>
-                <p className="text-sm text-gray-600">
-                  Designed to look natural and age gracefully over 10-15 years
-                </p>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.5 }}
-                className="text-center"
-              >
-                <div className="w-16 h-16 bg-clinic-accent text-white rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users size={24} />
-                </div>
-                <h3 className="text-lg font-cormorant font-medium text-clinic-accent mb-2">
-                  Facial Harmony
-                </h3>
-                <p className="text-sm text-gray-600">
-                  Each design exclusively tailored to your facial structure
-                </p>
-              </motion.div>
-            </div>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="text-lg text-gray-700 leading-relaxed text-center font-medium"
+            >
+              The good news? You no longer need to live with hair loss. Zayn Skin Clinic provides the most effective hair loss treatment in Pune, tailored for both men and women, restoring not just your hair but your confidence.
+            </motion.p>
           </div>
         </div>
       </section>
 
-      {/* International Standards Section */}
+      {/* Who Can Benefit Section */}
       <section className="py-20 bg-white">
+        <div className="container-custom">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-3xl md:text-4xl font-cormorant font-light text-clinic-accent text-center mb-12"
+          >
+            Who Can Benefit from Hair Transplant?
+          </motion.h2>
+
+          <div className="max-w-3xl mx-auto space-y-4">
+            {whoCanBenefit.map((benefit, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                className="flex items-start bg-clinic-secondary bg-opacity-20 rounded-lg p-6"
+              >
+                <CheckCircle className="text-clinic-accent mr-3 mt-0.5 flex-shrink-0" size={20} />
+                <span className="text-gray-700 text-lg">{benefit}</span>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="text-center text-lg text-gray-700 mt-12 max-w-3xl mx-auto"
+          >
+            Whether you're looking for hair loss treatment for men or hair loss treatment for women, our experts design a personalized plan that suits your unique needs.
+          </motion.p>
+        </div>
+      </section>
+
+      {/* Hair Transplant Procedures Section */}
+      <section className="py-20 bg-gradient-to-br from-clinic-secondary to-clinic-bg">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -270,26 +288,11 @@ const HairTransplant: React.FC = () => {
               transition={{ duration: 0.8 }}
             >
               <h2 className="text-3xl md:text-4xl font-cormorant font-light text-clinic-accent mb-6">
-                International Grade Excellence
+                Hair Transplant Procedures
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                We utilize cutting-edge hair transplant instruments sourced from the world's leading medical centers 
-                in Barcelona, USA, and other international hubs of medical innovation.
+              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                At Zayn Skin Clinic, we specialize in advanced hair treatment in Pune that combines medical excellence with aesthetic artistry.
               </p>
-              
-              <div className="bg-clinic-secondary bg-opacity-30 rounded-2xl p-6 mb-6">
-                <h3 className="text-xl font-cormorant font-medium text-clinic-accent mb-4">
-                  Advanced Graft Preservation
-                </h3>
-                <p className="text-gray-700 mb-4">
-                  Our grafts are stored in a specially fortified growth solution that maximizes follicle survival 
-                  and ensures optimal transplant success rates.
-                </p>
-                <div className="flex items-center text-sm text-clinic-accent">
-                  <Shield size={16} className="mr-2" />
-                  <span>99%+ graft survival rate with our preservation method</span>
-                </div>
-              </div>
             </motion.div>
 
             <motion.div
@@ -297,22 +300,21 @@ const HairTransplant: React.FC = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="space-y-4"
+              className="space-y-6"
             >
-              <h3 className="text-xl font-cormorant font-medium text-clinic-accent mb-6">
-                Our Advantages
-              </h3>
-              {advantages.map((advantage, index) => (
+              {procedures.map((procedure, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
-                  className="flex items-start"
+                  className="bg-white rounded-lg p-6 shadow-soft"
                 >
-                  <CheckCircle className="text-gold mr-3 mt-0.5 flex-shrink-0" size={16} />
-                  <span className="text-gray-700">{advantage}</span>
+                  <h3 className="text-xl font-cormorant font-medium text-clinic-accent mb-3">
+                    {procedure.title}
+                  </h3>
+                  <p className="text-gray-700 leading-relaxed">{procedure.description}</p>
                 </motion.div>
               ))}
             </motion.div>
@@ -320,68 +322,183 @@ const HairTransplant: React.FC = () => {
         </div>
       </section>
 
-      {/* Process Section */}
-      <section className="py-20 bg-gradient-to-br from-clinic-secondary to-clinic-bg">
+      {/* Why Choose Zayn Section */}
+      <section className="py-20 bg-white">
         <div className="container-custom">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-3xl md:text-4xl font-cormorant font-light text-clinic-accent text-center mb-16"
+            className="text-3xl md:text-4xl font-cormorant font-light text-clinic-accent text-center mb-12"
           >
-            Our Custom FUE Process
+            Why Choose Zayn Skin Clinic for Hair Transplant in Pune?
           </motion.h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-lg text-gray-700 text-center mb-12 max-w-3xl mx-auto"
+          >
+            With so many clinics around, why do patients call us the best hair transplant in Pune? Here's why:
+          </motion.p>
+
+          <div className="max-w-4xl mx-auto space-y-4">
+            {whyChooseUs.map((reason, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                className="flex items-start bg-clinic-secondary bg-opacity-30 rounded-lg p-6"
+              >
+                <CheckCircle className="text-clinic-accent mr-3 mt-0.5 flex-shrink-0" size={20} />
+                <span className="text-gray-700 text-lg">{reason}</span>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            className="text-center text-xl text-clinic-accent font-cormorant mt-12"
+          >
+            At Zayn Skin Clinic, it's not about treatment—it's about transformation.
+          </motion.p>
+        </div>
+      </section>
+
+
+      {/* Life After Transplant Section */}
+      <section className="py-20 bg-gradient-to-br from-clinic-bg to-clinic-secondary">
+        <div className="container-custom">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-3xl md:text-4xl font-cormorant font-light text-clinic-accent text-center mb-12"
+          >
+            Life After Hair Transplant – What to Expect
+          </motion.h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             {[
               {
-                step: "01",
-                title: "Consultation & Design",
-                description: "Comprehensive assessment and custom hairline design by Dr. Sajid"
+                icon: <Clock size={28} />,
+                title: "Minimal Downtime",
+                description: "Most patients return to work within days"
               },
               {
-                step: "02",
-                title: "Laser Mapping",
-                description: "Precision hairline mapping using advanced laser-assisted technology"
+                icon: <Microscope size={28} />,
+                title: "Gradual Growth",
+                description: "Hair begins to grow naturally within 3-6 months"
               },
               {
-                step: "03",
-                title: "Custom Extraction",
-                description: "Individual follicle extraction using international-grade instruments"
+                icon: <Shield size={28} />,
+                title: "Permanent Results",
+                description: "Once grown, transplanted hair lasts for life"
               },
               {
-                step: "04",
-                title: "Growth Solution Storage",
-                description: "Grafts preserved in fortified solution for maximum viability"
+                icon: <Star size={28} />,
+                title: "Confidence Boost",
+                description: "The transformation is not just physical, but emotional"
               }
-            ].map((process, index) => (
+            ].map((item, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="text-center"
+                className="bg-white rounded-lg p-6 text-center shadow-soft"
               >
-                <div className="w-16 h-16 bg-clinic-accent text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-cormorant">
-                  {process.step}
+                <div className="w-14 h-14 bg-clinic-accent text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                  {item.icon}
                 </div>
-                <h3 className="text-lg font-cormorant font-medium text-clinic-accent mb-3">
-                  {process.title}
+                <h3 className="text-lg font-cormorant font-medium text-clinic-accent mb-2">
+                  {item.title}
                 </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  {process.description}
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {item.description}
                 </p>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="text-center text-lg text-gray-700 mt-12 max-w-3xl mx-auto"
+          >
+            Your journey doesn't end at the procedure—it's the beginning of a confident new you.
+          </motion.p>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-white">
+        <div className="container-custom">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-3xl md:text-4xl font-cormorant font-light text-clinic-accent text-center mb-12"
+          >
+            Frequently Asked Questions
+          </motion.h2>
+
+          <div className="max-w-4xl mx-auto space-y-6">
+            {[
+              {
+                question: "Is a hair transplant painful?",
+                answer: "No. Thanks to modern anesthesia and techniques, discomfort is minimal."
+              },
+              {
+                question: "How long does the procedure take?",
+                answer: "Depending on the method, it usually takes 4–8 hours."
+              },
+              {
+                question: "Is it safe?",
+                answer: "Absolutely. At Zayn Skin Clinic, we follow strict medical protocols for safety and hygiene."
+              },
+              {
+                question: "Will my hair look natural?",
+                answer: "Yes! Our techniques ensure your hair blends seamlessly with your natural hairline."
+              },
+              {
+                question: "Can women undergo a hair transplant?",
+                answer: "Yes. We provide hair loss treatment for women and transplants tailored to female needs."
+              }
+            ].map((faq, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                className="bg-clinic-secondary bg-opacity-20 rounded-lg p-6"
+              >
+                <h3 className="text-lg font-cormorant font-medium text-clinic-accent mb-2">
+                  {faq.question}
+                </h3>
+                <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-
       {/* CTA Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gradient-to-br from-clinic-accent to-clinic-accent/90">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -390,20 +507,31 @@ const HairTransplant: React.FC = () => {
             transition={{ duration: 0.8 }}
             className="max-w-4xl mx-auto text-center"
           >
-            <h2 className="text-3xl md:text-4xl font-cormorant font-light text-clinic-accent mb-6">
-              Ready for Your Hair Transformation?
+            <h2 className="text-3xl md:text-4xl font-cormorant font-light text-white mb-6">
+              Why Now is the Right Time
             </h2>
-            <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              Experience the difference of Dr. Sajid's custom FUE technique with international-grade instruments 
-              and future-proof design. Contact us today to learn more.
+            <p className="text-lg text-white/90 leading-relaxed mb-6">
+              Each day you wait, more hair fades away. The sooner you act, the better the results. Choosing the best hair transplant in Pune today could mean enjoying natural, thick, and permanent hair for the rest of your life.
+            </p>
+            <p className="text-lg text-white/90 leading-relaxed mb-10">
+              Imagine looking in the mirror six months from now and seeing a full head of hair, a confident smile, and the person you've been missing.
+            </p>
+            <h3 className="text-2xl font-cormorant font-light text-white mb-6">
+              Book Your Consultation Today
+            </h3>
+            <p className="text-white/90 leading-relaxed mb-8">
+              At Zayn Skin Clinic, we don't just treat hair—we restore confidence, happiness, and identity. Whether you're looking for a hair transplant in Pune, hair treatment in Pune, or the best hair loss treatment in Pune, our doors are open to you.
             </p>
             <button
-              onClick={() => handleWhatsAppClick("Hi! I'm interested in the Custom FUE Hair Transplant procedure. Can you provide more information about the process, pricing, and availability?")}
-              className="inline-flex items-center bg-gradient-to-r from-clinic-accent to-clinic-accent/80 text-white px-8 py-4 rounded-lg hover:shadow-lg transition-all duration-300 text-lg font-medium"
+              onClick={() => handleWhatsAppClick("Hi! I'm interested in learning more about hair transplant procedures at Zayn Skin Clinic. Can you provide information about the consultation, process, and pricing?")}
+              className="inline-flex items-center bg-white text-clinic-accent px-8 py-4 rounded-lg hover:shadow-2xl transition-all duration-300 text-lg font-medium"
             >
               <MessageCircle className="w-5 h-5 mr-2" />
-              <span>Contact Us via WhatsApp</span>
+              <span>Book Your Consultation</span>
             </button>
+            <p className="text-white/90 text-sm mt-6">
+              Stop hiding. Stop worrying. Start living with confidence again.
+            </p>
           </motion.div>
         </div>
       </section>

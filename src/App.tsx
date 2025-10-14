@@ -25,7 +25,7 @@ function App() {
       <Route path="/" element={<LandingPage />} />
       <Route path="/dermatology" element={<DermatologyClinic />} />
       <Route path="/wellness" element={<WellnessLounge />} />
-      <Route path="/weight-loss" element={<WeightLoss />} />
+      <Route path="/weight-loss-clinic-in-pune" element={<WeightLoss />} />
       <Route path="/services" element={<Services />} />
       <Route path="/services/emsculpt" element={<EMSculpt />} />
       <Route path="/services/emsella" element={<Emsella />} />

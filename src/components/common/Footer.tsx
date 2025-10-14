@@ -109,7 +109,17 @@ const Footer: React.FC<FooterProps> = ({ variant }) => {
         
         <div className="flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0">
           <p>&copy; {new Date().getFullYear()} ZAYN Skin and Hair Clinic. All rights reserved.</p>
-          <p className="italic">Developed by Dhruv Prajapati</p>
+          <p className="italic pr-1">
+            Developed by{' '}
+            <a
+              href="https://cyberdhruv.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold bg-gradient-to-r from-gold to-yellow-400 bg-clip-text text-transparent hover:from-yellow-400 hover:to-gold transition-all duration-300 underline decoration-gold decoration-2 underline-offset-2 not-italic inline-block"
+            >
+              Dhruv Prajapati
+            </a>
+          </p>
         </div>
       </div>
     </footer>

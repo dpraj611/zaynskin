@@ -774,8 +774,8 @@ From cellular-level therapies to mind-body technologies, everything is designed 
                 </div>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button 
-                    to="/weight-loss"
+                  <Button
+                    to="/weight-loss-clinic-in-pune"
                     variant="gold"
                     className="inline-flex items-center px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                   >

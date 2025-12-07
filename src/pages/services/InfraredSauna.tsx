@@ -9,6 +9,16 @@ const InfraredSauna: React.FC = () => {
   const [selectedServices, setSelectedServices] = useState(['Infrared Sauna']);
 
   useEffect(() => {
+    // Add canonical tag
+    const canonicalUrl = 'https://www.zaynskinclinic.com/services/infrared-sauna';
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', canonicalUrl);
+
     window.scrollTo(0, 0);
   }, []);
 

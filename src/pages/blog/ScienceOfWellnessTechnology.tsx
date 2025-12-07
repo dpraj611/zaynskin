@@ -9,6 +9,17 @@ import Button from '../../components/ui/Button';
 const ScienceOfWellnessTechnology: React.FC = () => {
   useEffect(() => {
     document.title = 'The Science of Wellness: How Modern Technology Enhances Natural Healing | ZAYN Wellness';
+
+    // Add canonical tag
+    const canonicalUrl = 'https://www.zaynskinclinic.com/blog/skin-care-clinic-pune-technology';
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', canonicalUrl);
+
     window.scrollTo(0, 0);
   }, []);
 
@@ -17,7 +28,7 @@ const ScienceOfWellnessTechnology: React.FC = () => {
       title: "Infrared Sauna Benefits: More Than Just Relaxation",
       excerpt: "Explore the profound health benefits of infrared sauna therapy beyond stress relief.",
       image: "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg",
-      slug: "infrared-sauna-health-benefits"
+      slug: "infrared-sauna-skin-clinic-pune"
     },
     {
       title: "IV Therapy: Personalized Nutrition for Optimal Wellness",

@@ -13,6 +13,17 @@ const Services: React.FC = () => {
 
   useEffect(() => {
     document.title = 'Our Services | ZAYN Clinic';
+
+    // Add canonical tag
+    const canonicalUrl = 'https://www.zaynskinclinic.com/services';
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', canonicalUrl);
+
     window.scrollTo(0, 0);
   }, []);
 
@@ -1052,8 +1063,8 @@ const Services: React.FC = () => {
             transition={{ duration: 0.8 }}
             className="max-w-4xl mx-auto text-center"
           >
-            <Link 
-              to="/dermatology" 
+            <Link
+              to="/best-dermatologist-in-pune"
               className="inline-flex items-center text-clinic-accent hover:text-gold transition-colors duration-300 mb-8"
             >
               <ArrowLeft size={20} className="mr-2" />
@@ -1202,8 +1213,8 @@ const Services: React.FC = () => {
               >
                 Book Consultation
               </Button>
-              <Button 
-                to="/dermatology"
+              <Button
+                to="/best-dermatologist-in-pune"
                 variant="gold"
                 className="inline-flex items-center text-lg px-8 py-4"
               >

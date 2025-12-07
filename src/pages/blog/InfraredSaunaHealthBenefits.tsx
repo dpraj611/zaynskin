@@ -9,6 +9,17 @@ import Button from '../../components/ui/Button';
 const InfraredSaunaHealthBenefits: React.FC = () => {
   useEffect(() => {
     document.title = 'Infrared Sauna Benefits: More Than Just Relaxation | ZAYN Wellness';
+
+    // Add canonical tag
+    const canonicalUrl = 'https://www.zaynskinclinic.com/blog/infrared-sauna-skin-clinic-pune';
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', canonicalUrl);
+
     window.scrollTo(0, 0);
   }, []);
 
@@ -17,7 +28,7 @@ const InfraredSaunaHealthBenefits: React.FC = () => {
       title: "The Science of Wellness: How Modern Technology Enhances Natural Healing",
       excerpt: "Discover how cutting-edge treatments like EMSculpt and HIFU work in harmony with your body's natural processes.",
       image: "https://images.pexels.com/photos/4498574/pexels-photo-4498574.jpeg",
-      slug: "science-of-wellness-technology"
+      slug: "skin-care-clinic-pune-technology"
     },
     {
       title: "IV Therapy: Personalized Nutrition for Optimal Wellness",

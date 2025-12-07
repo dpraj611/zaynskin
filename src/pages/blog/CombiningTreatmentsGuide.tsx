@@ -9,6 +9,17 @@ import Button from '../../components/ui/Button';
 const CombiningTreatmentsGuide: React.FC = () => {
   useEffect(() => {
     document.title = 'Combining Treatments for Optimal Results | ZAYN Clinic';
+
+    // Add canonical tag
+    const canonicalUrl = 'https://www.zaynskinclinic.com/blog/face-treatment-pune-combination-guide';
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', canonicalUrl);
+
     window.scrollTo(0, 0);
   }, []);
 
@@ -23,7 +34,7 @@ const CombiningTreatmentsGuide: React.FC = () => {
       title: "The Science Behind Chemical Peels",
       excerpt: "Discover how chemical peels work and their transformative effects on different skin concerns.",
       image: "https://images.pexels.com/photos/3764574/pexels-photo-3764574.jpeg",
-      slug: "science-of-chemical-peels"
+      slug: "skin-treatment-pune-chemical-peels"
     }
   ];
 

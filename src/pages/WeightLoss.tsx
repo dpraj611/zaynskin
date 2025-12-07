@@ -28,7 +28,17 @@ import Button from '../components/ui/Button';
 const WeightLoss: React.FC = () => {
   useEffect(() => {
     document.title = 'Best Weight Loss Clinic in Pune | ZAYN Skin Clinic';
-    
+
+    // Add canonical tag
+    const canonicalUrl = 'https://www.zaynskinclinic.com/weight-loss-clinic-in-pune';
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', canonicalUrl);
+
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
@@ -39,7 +49,7 @@ const WeightLoss: React.FC = () => {
       meta.content = 'Transform your body at the best weight loss clinic in Pune. ZAYN offers medically-supervised programs, non-surgical fat loss, and personalized care for lasting results.';
       document.head.appendChild(meta);
     }
-    
+
     window.scrollTo(0, 0);
   }, []);
 

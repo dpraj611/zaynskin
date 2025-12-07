@@ -26,25 +26,25 @@ const Navigation: React.FC<NavigationProps> = ({ variant }) => {
           name: 'Services', 
           url: '/services', 
           icon: Stethoscope,
-          action: location.pathname === '/dermatology' ? () => scrollToSection('services') : undefined
+          action: location.pathname === '/best-dermatologist-in-pune' ? () => scrollToSection('services') : undefined
         },
         { 
           name: 'Doctors', 
-          url: '/dermatology#doctors', 
+          url: '/best-dermatologist-in-pune#doctors', 
           icon: Home,
-          action: location.pathname === '/dermatology' ? () => scrollToSection('doctors') : undefined
+          action: location.pathname === '/best-dermatologist-in-pune' ? () => scrollToSection('doctors') : undefined
         },
         { 
           name: 'Gallery', 
-          url: '/dermatology#gallery', 
+          url: '/best-dermatologist-in-pune#gallery', 
           icon: Sparkles,
-          action: location.pathname === '/dermatology' ? () => scrollToSection('gallery') : undefined
+          action: location.pathname === '/best-dermatologist-in-pune' ? () => scrollToSection('gallery') : undefined
         },
         { 
           name: 'Blog', 
-          url: '/dermatology#blog', 
+          url: '/best-dermatologist-in-pune#blog', 
           icon: FileText,
-          action: location.pathname === '/dermatology' ? () => scrollToSection('blog') : undefined
+          action: location.pathname === '/best-dermatologist-in-pune' ? () => scrollToSection('blog') : undefined
         },
       ]
     : [

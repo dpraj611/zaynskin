@@ -47,7 +47,17 @@ const DermatologyClinic: React.FC = () => {
   useEffect(() => {
     // Update document title and meta tags for blog section
     document.title = 'Best Skin & Wellness Blog in Pune | Zayn Skin Clinic';
-    
+
+    // Add canonical tag
+    const canonicalUrl = 'https://www.zaynskinclinic.com/best-dermatologist-in-pune';
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', canonicalUrl);
+
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
@@ -58,7 +68,7 @@ const DermatologyClinic: React.FC = () => {
       meta.content = 'Looking for expert skincare and wellness advice? Read Zayn Skin Clinic\'s blog for trusted tips, beauty trends, and treatment guidance from Pune\'s top dermatologists.';
       document.head.appendChild(meta);
     }
-    
+
     window.scrollTo(0, 0);
     setIsLoaded(true);
   }, []);
@@ -129,7 +139,7 @@ link: '/services#hair'
       image: "https://images.pexels.com/photos/3762567/pexels-photo-3762567.jpeg",
       date: "February 12, 2024",
       readTime: "4 min read",
-      slug: "science-of-chemical-peels"
+      slug: "skin-treatment-pune-chemical-peels"
     },
     {
       title: "Combining Treatments for Optimal Results",
@@ -137,7 +147,7 @@ link: '/services#hair'
       image: "https://images.pexels.com/photos/3764013/pexels-photo-3764013.jpeg",
       date: "February 10, 2024",
       readTime: "6 min read",
-      slug: "combining-treatments-guide"
+      slug: "face-treatment-pune-combination-guide"
     }
   ];
 
@@ -629,7 +639,7 @@ link: '/services#hair'
                     </div>
                   </div>
                   
-                  <Link to="/services/hair-transplant">
+                  <Link to="/services/hair-transplant-in-pune">
                     <Button variant="clinic" className="inline-flex items-center">
                       Learn More
                       <ArrowRight size={18} className="ml-2" />

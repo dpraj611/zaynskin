@@ -38,7 +38,17 @@ const WellnessLounge: React.FC = () => {
   useEffect(() => {
     // Update document title and meta tags
     document.title = 'Best Wellness & Skin Treatments in Pune | Zayn Skin Clinic';
-    
+
+    // Add canonical tag
+    const canonicalUrl = 'https://www.zaynskinclinic.com/wellness';
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', canonicalUrl);
+
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
@@ -49,7 +59,7 @@ const WellnessLounge: React.FC = () => {
       meta.content = 'Looking for expert wellness and skin treatments in Pune? Visit Zayn Skin Clinic for relaxing therapies, glowing skin, and total rejuvenation—book now!';
       document.head.appendChild(meta);
     }
-    
+
     document.title = 'ZAYN | Luxury Wellness Lounge';
     setIsLoaded(true);
     
@@ -285,7 +295,7 @@ const WellnessLounge: React.FC = () => {
       image: "https://images.pexels.com/photos/4498574/pexels-photo-4498574.jpeg",
       date: "February 18, 2024",
       readTime: "6 min read",
-      slug: "science-of-wellness-technology"
+      slug: "skin-care-clinic-pune-technology"
     },
     {
       title: "Infrared Sauna Benefits: More Than Just Relaxation",
@@ -293,7 +303,7 @@ const WellnessLounge: React.FC = () => {
       image: "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg",
       date: "February 16, 2024",
       readTime: "4 min read",
-      slug: "infrared-sauna-health-benefits"
+      slug: "infrared-sauna-skin-clinic-pune"
     },
     {
       title: "IV Therapy: Personalized Nutrition for Optimal Wellness",

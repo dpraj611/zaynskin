@@ -10,6 +10,16 @@ const HairTransplant: React.FC = () => {
   const [selectedServices, setSelectedServices] = useState(['Hair Transplant']);
 
   useEffect(() => {
+    // Add canonical tag
+    const canonicalUrl = 'https://www.zaynskinclinic.com/services/hair-transplant-in-pune';
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', canonicalUrl);
+
     window.scrollTo(0, 0);
   }, []);
 
@@ -115,7 +125,7 @@ const HairTransplant: React.FC = () => {
             className="max-w-6xl mx-auto"
           >
             <Link 
-              to="/dermatology#services" 
+              to="/best-dermatologist-in-pune#services" 
               className="inline-flex items-center text-clinic-accent hover:text-gold transition-colors duration-300 mb-8"
             >
               <ArrowLeft size={20} className="mr-2" />

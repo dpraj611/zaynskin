@@ -9,6 +9,17 @@ import Button from '../../components/ui/Button';
 const ModernHairRestoration: React.FC = () => {
   useEffect(() => {
     document.title = 'Understanding Modern Hair Restoration Techniques | ZAYN Clinic';
+
+    // Add canonical tag
+    const canonicalUrl = 'https://www.zaynskinclinic.com/blog/modern-hair-restoration-techniques';
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', canonicalUrl);
+
     window.scrollTo(0, 0);
   }, []);
 
@@ -17,13 +28,13 @@ const ModernHairRestoration: React.FC = () => {
       title: "The Science Behind Chemical Peels",
       excerpt: "Discover how chemical peels work and their transformative effects on different skin concerns.",
       image: "https://images.pexels.com/photos/3762567/pexels-photo-3762567.jpeg",
-      slug: "science-of-chemical-peels"
+      slug: "skin-treatment-pune-chemical-peels"
     },
     {
       title: "Combining Treatments for Optimal Results",
       excerpt: "Learn how combining different treatments can enhance your skincare results.",
       image: "https://images.pexels.com/photos/3764013/pexels-photo-3764013.jpeg",
-      slug: "combining-treatments-guide"
+      slug: "face-treatment-pune-combination-guide"
     }
   ];
 

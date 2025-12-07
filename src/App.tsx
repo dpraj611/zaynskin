@@ -23,7 +23,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<LandingPage />} />
-      <Route path="/dermatology" element={<DermatologyClinic />} />
+      <Route path="/best-dermatologist-in-pune" element={<DermatologyClinic />} />
       <Route path="/wellness" element={<WellnessLounge />} />
       <Route path="/weight-loss-clinic-in-pune" element={<WeightLoss />} />
       <Route path="/services" element={<Services />} />
@@ -33,12 +33,12 @@ function App() {
       <Route path="/services/iv-therapy" element={<IVTherapy />} />
       <Route path="/services/hifu" element={<HIFU />} />
       <Route path="/services/hydrafacial" element={<HydraFacial />} />
-      <Route path="/services/hair-transplant" element={<HairTransplant />} />
+      <Route path="/services/hair-transplant-in-pune" element={<HairTransplant />} />
       <Route path="/blog/modern-hair-restoration-techniques" element={<ModernHairRestoration />} />
-      <Route path="/blog/science-of-chemical-peels" element={<ScienceOfChemicalPeels />} />
-      <Route path="/blog/combining-treatments-guide" element={<CombiningTreatmentsGuide />} />
-      <Route path="/blog/science-of-wellness-technology" element={<ScienceOfWellnessTechnology />} />
-      <Route path="/blog/infrared-sauna-health-benefits" element={<InfraredSaunaHealthBenefits />} />
+      <Route path="/blog/skin-treatment-pune-chemical-peels" element={<ScienceOfChemicalPeels />} />
+      <Route path="/blog/face-treatment-pune-combination-guide" element={<CombiningTreatmentsGuide />} />
+      <Route path="/blog/skin-care-clinic-pune-technology" element={<ScienceOfWellnessTechnology />} />
+      <Route path="/blog/infrared-sauna-skin-clinic-pune" element={<InfraredSaunaHealthBenefits />} />
       <Route path="/blog/personalized-iv-therapy-guide" element={<PersonalizedIVTherapyGuide />} />
       <Route path="*" element={<NotFound />} />
     </Routes>

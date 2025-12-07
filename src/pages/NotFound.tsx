@@ -7,12 +7,22 @@ import Button from '../components/ui/Button';
 const NotFound: React.FC = () => {
   useEffect(() => {
     document.title = 'Page Not Found | ZAYN Clinic';
+
+    // Add canonical tag
+    const canonicalUrl = 'https://www.zaynskinclinic.com/404';
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', canonicalUrl);
   }, []);
 
   const popularPages = [
-    { name: 'Dermatology Clinic', path: '/dermatology', description: 'Advanced skin treatments and dermatology services' },
+    { name: 'Dermatology Clinic', path: '/best-dermatologist-in-pune', description: 'Advanced skin treatments and dermatology services' },
     { name: 'Wellness Lounge', path: '/wellness', description: 'Luxury wellness treatments and body contouring' },
-    { name: 'Hair Transplant', path: '/services/hair-transplant', description: 'Custom FUE hair restoration techniques' },
+    { name: 'Hair Transplant', path: '/services/hair-transplant-in-pune', description: 'Custom FUE hair restoration techniques' },
     { name: 'EMSculpt', path: '/services/emsculpt', description: 'Revolutionary body sculpting technology' },
     { name: 'HIFU Treatment', path: '/services/hifu', description: 'Non-surgical skin tightening and lifting' },
     { name: 'IV Therapy', path: '/services/iv-therapy', description: 'Personalized nutrient infusion therapy' }

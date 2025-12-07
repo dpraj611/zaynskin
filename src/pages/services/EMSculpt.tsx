@@ -11,7 +11,17 @@ const EMSculpt: React.FC = () => {
   useEffect(() => {
     // Update document title and meta tags
     document.title = 'Fat Burning & Muscle Toning | Zayn Skin Clinic Pune';
-    
+
+    // Add canonical tag
+    const canonicalUrl = 'https://www.zaynskinclinic.com/services/emsculpt';
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', canonicalUrl);
+
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
@@ -22,7 +32,7 @@ const EMSculpt: React.FC = () => {
       meta.content = 'Looking for non-surgical fat loss or muscle toning? Try body contouring at Zayn Skin Clinic, Pune. Safe, effective, and no downtime—book now!';
       document.head.appendChild(meta);
     }
-    
+
     window.scrollTo(0, 0);
   }, []);
 

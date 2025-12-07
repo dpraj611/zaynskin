@@ -50,12 +50,33 @@ const LandingPage: React.FC = () => {
   
   useEffect(() => {
     setIsLoaded(true);
-    
+
+    // Add canonical tag
+    const canonicalUrl = 'https://www.zaynskinclinic.com/';
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', canonicalUrl);
+
+    // Update meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Looking for hair clinic in Pune? Zayn Skin Clinic offers effective hair loss and skin treatments to help you restore your appearance. Visit us today!');
+    } else {
+      const meta = document.createElement('meta');
+      meta.name = 'description';
+      meta.content = 'Looking for hair clinic in Pune? Zayn Skin Clinic offers effective hair loss and skin treatments to help you restore your appearance. Visit us today!';
+      document.head.appendChild(meta);
+    }
+
     // Check if device is mobile
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    
+
     checkMobile();
     window.addEventListener('resize', checkMobile);
     
@@ -167,7 +188,7 @@ const LandingPage: React.FC = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 2.2 }}
-                onClick={() => handleNavigate('/dermatology')}
+                onClick={() => handleNavigate('/best-dermatologist-in-pune')}
               >
                 <motion.div 
                   className="text-center relative bg-gradient-to-br from-white/95 via-clinic-bg/90 to-clinic-secondary/80 backdrop-blur-md rounded-2xl p-6 shadow-luxury border border-clinic-accent/20 max-w-sm w-full overflow-hidden"
@@ -178,9 +199,9 @@ const LandingPage: React.FC = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-clinic-accent/5 via-transparent to-gold/10 rounded-2xl"></div>
                   
                   <div className="relative z-10">
-                    <h2 className="text-lg font-cormorant font-light mb-2 text-clinic-accent">
-                      Step into Skin Science
-                    </h2>
+                    <h1 className="text-lg font-cormorant font-light mb-2 text-clinic-accent">
+                      Best Dermatology Clinic in Pune
+                    </h1>
                     <p className="text-xs mb-4 text-clinic-accent/80 leading-relaxed">
                       Science-Driven Aesthetics, Personalized for You
                     </p>
@@ -189,7 +210,7 @@ const LandingPage: React.FC = () => {
                       variant="clinic"
                       onClick={(e) => {
                         e.stopPropagation();
-                        handleNavigate('/dermatology');
+                        handleNavigate('/best-dermatologist-in-pune');
                       }}
                       className="px-6 py-2 text-xs rounded-full border border-clinic-accent shadow-md hover:bg-gradient-to-r hover:from-clinic-accent hover:to-clinic-accent/80 hover:text-white transition-all duration-300"
                     >

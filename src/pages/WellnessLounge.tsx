@@ -290,6 +290,38 @@ const WellnessLounge: React.FC = () => {
 
   const blogPosts = [
     {
+      title: "2026 Guide to Fat Loss Treatment: What Really Works for Sustainable Results",
+      excerpt: "Discover the latest advances in fat loss treatments and how to choose the best option for lasting results.",
+      image: "https://images.pexels.com/photos/4498361/pexels-photo-4498361.jpeg",
+      date: "February 1, 2026",
+      readTime: "8 min read",
+      slug: "fat-loss-treatment-guide-2026"
+    },
+    {
+      title: "Top-Rated Wellness Lounge Pune: What to Expect in 2026",
+      excerpt: "Explore how wellness lounges are evolving to offer premium experiences for complete rejuvenation.",
+      image: "/images/loungehero.jpg",
+      date: "January 25, 2026",
+      readTime: "7 min read",
+      slug: "wellness-lounge-pune-2026"
+    },
+    {
+      title: "Top Benefits of Choosing Non Surgical Weight Loss Treatment in 2026",
+      excerpt: "Learn why non-surgical weight loss treatments are becoming the top choice for sustainable body transformation.",
+      image: "https://images.pexels.com/photos/6551415/pexels-photo-6551415.jpeg",
+      date: "January 20, 2026",
+      readTime: "7 min read",
+      slug: "non-surgical-weight-loss-2026"
+    },
+    {
+      title: "2026 Guide: How to Choose the Right Wellness Lounge Pune for Your Needs",
+      excerpt: "A comprehensive guide to selecting the perfect wellness lounge that matches your lifestyle and goals.",
+      image: "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg",
+      date: "January 15, 2026",
+      readTime: "8 min read",
+      slug: "choosing-wellness-lounge-2026"
+    },
+    {
       title: "The Science of Wellness: How Modern Technology Enhances Natural Healing",
       excerpt: "Discover how cutting-edge treatments like EMSculpt and HIFU work in harmony with your body's natural processes.",
       image: "https://images.pexels.com/photos/4498574/pexels-photo-4498574.jpeg",

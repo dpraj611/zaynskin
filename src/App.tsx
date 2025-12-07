@@ -16,6 +16,10 @@ import CombiningTreatmentsGuide from './pages/blog/CombiningTreatmentsGuide';
 import ScienceOfWellnessTechnology from './pages/blog/ScienceOfWellnessTechnology';
 import InfraredSaunaHealthBenefits from './pages/blog/InfraredSaunaHealthBenefits';
 import PersonalizedIVTherapyGuide from './pages/blog/PersonalizedIVTherapyGuide';
+import FatLossTreatmentGuide2026 from './pages/blog/FatLossTreatmentGuide2026';
+import WellnessLoungePune2026 from './pages/blog/WellnessLoungePune2026';
+import NonSurgicalWeightLoss2026 from './pages/blog/NonSurgicalWeightLoss2026';
+import ChoosingWellnessLounge2026 from './pages/blog/ChoosingWellnessLounge2026';
 import WeightLoss from './pages/WeightLoss';
 import NotFound from './pages/NotFound';
 
@@ -40,6 +44,10 @@ function App() {
       <Route path="/blog/skin-care-clinic-pune-technology" element={<ScienceOfWellnessTechnology />} />
       <Route path="/blog/infrared-sauna-skin-clinic-pune" element={<InfraredSaunaHealthBenefits />} />
       <Route path="/blog/personalized-iv-therapy-guide" element={<PersonalizedIVTherapyGuide />} />
+      <Route path="/blog/fat-loss-treatment-guide-2026" element={<FatLossTreatmentGuide2026 />} />
+      <Route path="/blog/wellness-lounge-pune-2026" element={<WellnessLoungePune2026 />} />
+      <Route path="/blog/non-surgical-weight-loss-2026" element={<NonSurgicalWeightLoss2026 />} />
+      <Route path="/blog/choosing-wellness-lounge-2026" element={<ChoosingWellnessLounge2026 />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

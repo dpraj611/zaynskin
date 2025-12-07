@@ -460,7 +460,7 @@ const LandingPage: React.FC = () => {
         className="h-1/2 md:h-full w-full md:w-1/2 relative cursor-pointer transition-all duration-700"
         onMouseEnter={() => handleMouseEnter('clinic')}
         onMouseLeave={handleMouseLeave}
-        onClick={() => handleNavigate('/dermatology')}
+        onClick={() => handleNavigate('/best-dermatologist-in-pune')}
       >
         <div className="absolute inset-0 transition-all duration-700">
           <motion.div 
@@ -499,7 +499,7 @@ const LandingPage: React.FC = () => {
               variant={hoveredSide === 'clinic' ? 'gold' : 'clinic'}
               onClick={(e) => {
                 e.stopPropagation();
-                handleNavigate('/dermatology');
+                handleNavigate('/best-dermatologist-in-pune');
               }}
               className="text-base md:text-lg px-8 md:px-16 py-3 md:py-6 rounded-full border border-current"
             >

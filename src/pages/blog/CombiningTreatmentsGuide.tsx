@@ -76,7 +76,7 @@ const CombiningTreatmentsGuide: React.FC = () => {
             className="max-w-4xl mx-auto"
           >
             <Link 
-              to="/dermatology#blog" 
+              to="/best-dermatologist-in-pune#blog" 
               className="inline-flex items-center text-clinic-accent hover:text-gold transition-colors duration-300 mb-8"
             >
               <ArrowLeft size={20} className="mr-2" />

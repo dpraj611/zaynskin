@@ -3,10 +3,11 @@ import { motion } from 'framer-motion';
 import Navigation from '../../components/common/Navigation';
 import Footer from '../../components/common/Footer';
 import Button from '../../components/ui/Button';
-import { MessageCircle, Check } from 'lucide-react';
+import { MessageCircle, Check, ChevronDown, ChevronUp, CheckCircle, Sparkles, Shield } from 'lucide-react';
 
 const HIFU: React.FC = () => {
   const [selectedServices, setSelectedServices] = useState(['HIFU']);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   useEffect(() => {
     // Add canonical tag
@@ -349,6 +350,411 @@ HIFU (High-Intensity Focused Ultrasound) is the gold standard in non-surgical fa
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Article Content Section with Read More / Read Less */}
+      <section className="py-20 bg-lounge-secondary bg-opacity-20">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="text-3xl md:text-4xl font-cormorant font-light text-lounge-accent text-center mb-8">
+                HIFU Skin Treatment in Pune for Non-Surgical Face Lifting & Tightening
+              </h2>
+
+              {/* Always visible intro */}
+              <div className="space-y-6 text-gray-700 leading-relaxed text-lg">
+                <h3 className="text-2xl font-cormorant font-medium text-lounge-accent">
+                  Advanced Aesthetic Solutions at Zayn Skin Clinic
+                </h3>
+                <p>
+                  The process of getting old is natural; however, today, one can keep a young, firm, and glowing skin without surgery thanks to modern technology. Considering the fact that you may need a non-invasive procedure that will help you to lift/tighten your skin, HIFU skin treatment Pune can be one of the best solutions currently.
+                </p>
+                <p>
+                  We provide advanced services at Zayn Skin Clinic, which are aimed at revitalizing your skin and providing it with its elasticity. Our procedures, which are led by experts, are safe, comfortable, and visible, hence making us a reliable place to be in case a person wants to be provided with advanced aesthetic care.
+                </p>
+
+                <div className="bg-gradient-to-r from-lounge-bg to-lounge-secondary/30 rounded-3xl p-8">
+                  <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-4">
+                    What is HIFU Treatment?
+                  </h3>
+                  <p className="mb-4">
+                    HIFU (High-Intensity Focused Ultrasound) is a non-surgical treatment that is revolutionary and employs ultrasound energy to treat the deeper layers of skin. This energy makes the skin produce collagen, hence making the skin tighter and firmer, and lifted in the long run.
+                  </p>
+                  <p>
+                    HIFU facial Pune treatments are not invasive, have no downtime, and no cuts are required, unlike invasive procedures, and the results are natural-looking. It is a perfect option for those people who desire to enhance their looks without having surgery.
+                  </p>
+                </div>
+              </div>
+
+              {/* Expandable content */}
+              <div
+                className={`overflow-hidden transition-all duration-700 ease-in-out ${isExpanded ? 'max-h-[15000px] opacity-100 mt-8' : 'max-h-0 opacity-0'
+                  }`}
+              >
+                <div className="space-y-10 text-gray-700 leading-relaxed text-lg">
+
+                  {/* How HIFU Works */}
+                  <div>
+                    <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-4">
+                      How HIFU Works
+                    </h3>
+                    <p className="mb-4">
+                      The HIFU technology concentrates the ultrasound energy into specific depths below the skin. This produces regulated heat energy, which activates the natural healing process of the body and stimulates the production of collagen.
+                    </p>
+                    <p>
+                      The higher the collagen concentration, the more of a pull the skin is getting. This explains why HIFU skin tightening Pune is commonly prescribed for people who are suffering the effects of sagging skin and fine lines.
+                    </p>
+                  </div>
+
+                  {/* Major Advantages */}
+                  <div className="bg-gradient-to-r from-lounge-bg to-lounge-secondary/30 rounded-3xl p-8">
+                    <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-6">
+                      The Major Advantages of HIFU Skin Treatment
+                    </h3>
+                    <p className="mb-6">There are a variety of advantages of HIFU skin treatment Pune, both among men and women:</p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {[
+                        { title: 'Non-Surgical Face Lift', desc: 'HIFU skin treatment Pune has one of the greatest benefits in the fact that it provides a non-surgical lifting effect.' },
+                        { title: 'Skin Tightening & Firming', desc: 'The procedure activates collagen, making HIFU skin tightening Pune very effective in enhancing skin elasticity.' },
+                        { title: 'Natural Results', desc: 'The outcome comes in bits, giving a natural and rejuvenated appearance.' },
+                        { title: 'No Downtime', desc: 'HIFU facial Pune can be done without stopping you from your daily activities.' },
+                        { title: 'Long-Lasting Effects', desc: 'The collagen-building process lasts months following the treatment.' }
+                      ].map((item, i) => (
+                        <div key={i} className="flex items-start space-x-3 bg-white rounded-xl p-4 shadow-soft">
+                          <CheckCircle className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
+                          <div>
+                            <h4 className="font-semibold text-lounge-accent mb-1">{item.title}</h4>
+                            <span className="text-sm">{item.desc}</span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Facial HIFU Skin Rejuvenation */}
+                  <div>
+                    <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-4">
+                      Facial HIFU Skin Rejuvenation
+                    </h3>
+                    <p className="mb-6">HIFU facial Pune is made to target the following areas:</p>
+                    <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-6">
+                      {['Face', 'Neck', 'Jawline', 'Forehead', 'Under-eye area'].map((area, i) => (
+                        <div key={i} className="flex items-center space-x-2 bg-gradient-to-r from-lounge-bg to-lounge-secondary/30 rounded-xl p-4">
+                          <Sparkles className="w-5 h-5 text-gold flex-shrink-0" />
+                          <span className="font-medium text-lounge-accent">{area}</span>
+                        </div>
+                      ))}
+                    </div>
+                    <p>
+                      This treatment is used to disarm wrinkles, to lift sinking skin, and to enhance skin texture. HIFU facial Pune is a non-invasive method of facial lift; many clients love using this as it offers them an option to a traditional facelift.
+                    </p>
+                  </div>
+
+                  {/* Why Choose Zayn */}
+                  <div className="bg-gradient-to-r from-lounge-bg to-lounge-secondary/30 rounded-3xl p-8">
+                    <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-6">
+                      Why Choose Zayn Skin Clinic?
+                    </h3>
+                    <p className="mb-6">One should find the most suitable HIFU clinic Pune, where a clinic should not only adopt the latest technology but also expertise. We offer the following at Zayn Skin Clinic:</p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {[
+                        { title: 'Experienced Professionals', desc: 'The staff is trained on safe and effective practices.' },
+                        { title: 'Advanced Technology', desc: 'Modern equipment is used to give accurate and consistent results.' },
+                        { title: 'Personalized Treatments', desc: 'Each session is tailored according to your skin and issues.' },
+                        { title: 'Hygiene & Safety', desc: 'We observe high levels of hygiene with all treatments.' },
+                        { title: 'Proven Results', desc: 'Clients refer to us as a top HIFU clinic Pune because of providing apparent change.' }
+                      ].map((item, i) => (
+                        <div key={i} className="flex items-start space-x-3 bg-white rounded-xl p-4 shadow-soft">
+                          <CheckCircle className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
+                          <div>
+                            <h4 className="font-semibold text-lounge-accent mb-1">{item.title}</h4>
+                            <span className="text-sm">{item.desc}</span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Session Expectations */}
+                  <div>
+                    <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-6">
+                      The Expectations of Your HIFU Session
+                    </h3>
+                    <div className="space-y-4">
+                      {[
+                        { step: 'Consultation', desc: 'Our specialists examine your skin condition and objectives.' },
+                        { step: 'Preparation', desc: 'The treatment area is washed, and a gel is applied.' },
+                        { step: 'Treatment', desc: 'The ultrasound energy is provided to specific regions.' },
+                        { step: 'Completion', desc: 'The duration of the session is 30–60 minutes.' }
+                      ].map((item, i) => (
+                        <div key={i} className="flex items-start space-x-4 bg-gradient-to-r from-lounge-bg to-lounge-secondary/30 rounded-xl p-5">
+                          <div className="w-10 h-10 bg-lounge-accent text-white rounded-full flex items-center justify-center flex-shrink-0 text-lg font-cormorant shadow-luxury">
+                            {i + 1}
+                          </div>
+                          <div>
+                            <h4 className="text-xl font-cormorant font-medium text-lounge-accent mb-1">{item.step}</h4>
+                            <p className="text-gray-600">{item.desc}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                    <p className="mt-6">Each and every HIFU session at Zayn Skin Clinic is aimed at ensuring maximum comfort and effectiveness.</p>
+                  </div>
+
+                  {/* Ideal Candidate */}
+                  <div className="bg-gradient-to-r from-lounge-bg to-lounge-secondary/30 rounded-3xl p-8">
+                    <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-4">
+                      Who is the Ideal Candidate?
+                    </h3>
+                    <p className="mb-4">HIFU skin treatment Pune is appropriate for:</p>
+                    <ul className="space-y-3">
+                      {[
+                        'Patients who have mild to moderate skin laxity.',
+                        'Individuals seeking a non-surgical lift.',
+                        'People with saggy skin and wrinkles.',
+                        'People with the desire to get preventive anti-aging treatment.'
+                      ].map((item, i) => (
+                        <li key={i} className="flex items-start space-x-3">
+                          <CheckCircle className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="mt-6">Our clinic is a HIFU clinic Pune preferred by clients of various age groups.</p>
+                  </div>
+
+                  {/* Infrared Sauna Cross-promotion */}
+                  <div className="bg-gradient-to-r from-gold/10 to-yellow-50 rounded-3xl p-8 border border-gold/20">
+                    <p className="text-lounge-accent italic">
+                      Enhance your results from HIFU skin treatment Pune by combining it with Infrared Sauna Treatment, which helps detoxify the body, improve circulation, and support overall skin health from within.
+                    </p>
+                  </div>
+
+                  {/* Areas Treated */}
+                  <div>
+                    <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-4">
+                      Areas Treated with HIFU
+                    </h3>
+                    <p className="mb-6">HIFU may be applied to several regions, which include:</p>
+                    <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-6">
+                      {['Face', 'Neck', 'Jawline', 'Cheeks', 'Brow area'].map((area, i) => (
+                        <div key={i} className="flex items-center space-x-2 bg-gradient-to-r from-lounge-bg to-lounge-secondary/30 rounded-xl p-4">
+                          <Sparkles className="w-5 h-5 text-gold flex-shrink-0" />
+                          <span className="font-medium text-lounge-accent">{area}</span>
+                        </div>
+                      ))}
+                    </div>
+                    <p>HIFU skin tightening Pune is especially suitable for the lifting and shaping of these parts.</p>
+                  </div>
+
+                  {/* How Many Sessions */}
+                  <div className="bg-gradient-to-r from-lounge-bg to-lounge-secondary/30 rounded-3xl p-8">
+                    <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-4">
+                      How Many Sessions Are Needed?
+                    </h3>
+                    <p className="mb-4">
+                      The majority of clients are able to notice results after the first session. Nonetheless, other sessions can be prescribed with regard to your skin condition.
+                    </p>
+                    <p>
+                      In Zayn Skin Clinic, we not only offer fixed packages when it comes to HIFU skin treatment Pune but also tailor them to achieve the best outcomes.
+                    </p>
+                  </div>
+
+                  {/* HIFU vs Surgical Facelift */}
+                  <div>
+                    <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-6">
+                      HIFU vs Surgical Facelift
+                    </h3>
+                    <div className="overflow-x-auto">
+                      <table className="w-full bg-white rounded-xl shadow-soft overflow-hidden">
+                        <thead>
+                          <tr className="bg-lounge-accent text-white">
+                            <th className="px-6 py-4 text-left font-cormorant text-lg">Feature</th>
+                            <th className="px-6 py-4 text-left font-cormorant text-lg">HIFU</th>
+                            <th className="px-6 py-4 text-left font-cormorant text-lg">Surgical Facelift</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {[
+                            { feature: 'Invasiveness', hifu: 'Non-invasive', surgical: 'Surgical' },
+                            { feature: 'Downtime', hifu: 'None', surgical: 'Weeks' },
+                            { feature: 'Results', hifu: 'Gradual', surgical: 'Immediate' },
+                            { feature: 'Safety', hifu: 'High', surgical: 'Moderate' }
+                          ].map((row, i) => (
+                            <tr key={i} className={i % 2 === 0 ? 'bg-lounge-bg/50' : 'bg-white'}>
+                              <td className="px-6 py-3 font-medium text-lounge-accent">{row.feature}</td>
+                              <td className="px-6 py-3 text-gold font-medium">{row.hifu}</td>
+                              <td className="px-6 py-3 text-gray-600">{row.surgical}</td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                    <p className="mt-6">This is the reason why HIFU facial Pune is a much safer and more convenient option for many people.</p>
+                  </div>
+
+                  {/* Preparation & Post-Treatment */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="bg-gradient-to-r from-lounge-bg to-lounge-secondary/30 rounded-3xl p-8">
+                      <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-4">
+                        Preparation Tips
+                      </h3>
+                      <ul className="space-y-3">
+                        {[
+                          'Stay hydrated.',
+                          'Heavy skincare products should be avoided.',
+                          'Follow expert advice.',
+                          'Relax and stay calm.'
+                        ].map((item, i) => (
+                          <li key={i} className="flex items-start space-x-3">
+                            <CheckCircle className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
+                            <span className="text-sm">{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="bg-gradient-to-r from-lounge-bg to-lounge-secondary/30 rounded-3xl p-8">
+                      <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-4">
+                        Post-Treatment Care
+                      </h3>
+                      <ul className="space-y-3">
+                        {[
+                          'Avoid direct sun exposure.',
+                          'Use sunscreen regularly.',
+                          'Adhere to skincare directions.',
+                          'Stay hydrated.'
+                        ].map((item, i) => (
+                          <li key={i} className="flex items-start space-x-3">
+                            <CheckCircle className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
+                            <span className="text-sm">{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+
+                  {/* Safety */}
+                  <div className="bg-gradient-to-r from-lounge-bg to-lounge-secondary/30 rounded-3xl p-8">
+                    <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-4">
+                      Safety & Precautions
+                    </h3>
+                    <p className="mb-4">Although HIFU skin treatment Pune is not harmful, it is necessary to:</p>
+                    <ul className="space-y-3 mb-6">
+                      {[
+                        'Select a reliable HIFU clinic Pune.',
+                        'Follow professional guidance.',
+                        'Report on medical history.'
+                      ].map((item, i) => (
+                        <li key={i} className="flex items-start space-x-3">
+                          <Shield className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="font-medium text-lounge-accent">At Zayn Skin Clinic, we follow the best safety standards at any given procedure.</p>
+                  </div>
+
+                  {/* Long-Term Benefits */}
+                  <div>
+                    <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-4">
+                      Long-Term Benefits of HIFU
+                    </h3>
+                    <p className="mb-4">The care that can be experienced with proper attention is:</p>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
+                      {['Firmer skin', 'Reduced wrinkles', 'Improved facial contours', 'Youthful appearance'].map((benefit, i) => (
+                        <div key={i} className="flex items-center space-x-2 bg-gradient-to-r from-lounge-bg to-lounge-secondary/30 rounded-xl p-4">
+                          <Sparkles className="w-4 h-4 text-gold flex-shrink-0" />
+                          <span className="text-sm font-medium text-lounge-accent">{benefit}</span>
+                        </div>
+                      ))}
+                    </div>
+                    <p>A major proportion of clients keep revisiting our HIFU clinic Pune to have long-term anti-aging benefits.</p>
+                  </div>
+
+                  {/* Why HIFU is the Future */}
+                  <div className="bg-gradient-to-r from-lounge-bg to-lounge-secondary/30 rounded-3xl p-8">
+                    <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-4">
+                      Why HIFU is the Future of Skincare
+                    </h3>
+                    <p className="mb-4">
+                      The contemporary aesthetic procedures are getting turned to non-surgical ones. HIFU skin treatment Pune is one of the most developed products of skin tightening and lifting.
+                    </p>
+                    <p>
+                      It offers good results without surgery hence it is the preferred option among those who would like to rejuvenate naturally.
+                    </p>
+                  </div>
+
+                  {/* FAQs */}
+                  <div>
+                    <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-6">
+                      FAQs
+                    </h3>
+                    <div className="space-y-4">
+                      {[
+                        { q: 'Is HIFU safe?', a: 'Yes, it is a non-invasive and non-dangerous treatment.' },
+                        { q: 'How long does a session take?', a: 'Typically 30–60 minutes.' },
+                        { q: 'Is there downtime?', a: 'No, you may start normal duties at once.' },
+                        { q: 'When will I see results?', a: 'The outcome begins to increase with time (weeks).' },
+                        { q: 'Does it hurt?', a: 'Mild discomfort may be experienced.' },
+                        { q: 'How long do results last?', a: 'Up to 6–12 months.' },
+                        { q: 'Is it applicable to every type of skin?', a: 'Yes, the majority of skin types can be helped.' },
+                        { q: 'Can it replace surgery?', a: 'It is a non-surgical alternative.' },
+                        { q: 'How many sessions are needed?', a: 'Typically one, including maintenance.' },
+                        { q: 'Is it worth it?', a: 'Yes, for those seeking non-invasive skin tightening.' }
+                      ].map((faq, i) => (
+                        <div key={i} className="bg-gradient-to-r from-lounge-bg to-lounge-secondary/30 rounded-xl p-4">
+                          <h4 className="font-semibold text-lounge-accent mb-1">{faq.q}</h4>
+                          <p className="text-sm text-gray-600">{faq.a}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Final CTA */}
+                  <div>
+                    <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-4">
+                      Start Your Skin Transformation
+                    </h3>
+                    <p className="mb-4">
+                      HIFU skin treatment Pune is the ideal choice in case you want to use a safe, effective, and non-surgical method of achieving youthful skin.
+                    </p>
+                    <p className="mb-4">
+                      We believe in making you look and feel good at Zayn Skin Clinic, which has advanced treatments and professionals working to ensure that you look and feel the best.
+                    </p>
+                    <p className="font-semibold text-lounge-accent text-xl font-cormorant">
+                      Make your booking now at a reputable HIFU clinic Pune and reap the rewards of a professional HIFU facial Pune that will help you to look and feel good in your natural beauty.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Read More / Read Less Button */}
+              <div className="text-center mt-8">
+                <button
+                  onClick={() => setIsExpanded(!isExpanded)}
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-lounge-accent to-lounge-secondary text-white px-8 py-3 rounded-full hover:shadow-luxury transition-all duration-300 text-lg font-semibold group"
+                >
+                  {isExpanded ? (
+                    <>
+                      Read Less
+                      <ChevronUp className="w-5 h-5 group-hover:-translate-y-0.5 transition-transform duration-300" />
+                    </>
+                  ) : (
+                    <>
+                      Read More
+                      <ChevronDown className="w-5 h-5 group-hover:translate-y-0.5 transition-transform duration-300" />
+                    </>
+                  )}
+                </button>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>

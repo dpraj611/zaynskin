@@ -3,10 +3,11 @@ import { motion } from 'framer-motion';
 import Navigation from '../../components/common/Navigation';
 import Footer from '../../components/common/Footer';
 import Button from '../../components/ui/Button';
-import { MessageCircle, Check } from 'lucide-react';
+import { MessageCircle, Check, ChevronDown, ChevronUp, CheckCircle, Sparkles } from 'lucide-react';
 
 const Emsella: React.FC = () => {
   const [selectedServices, setSelectedServices] = useState(['Emsella']);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   useEffect(() => {
     // Add canonical tag
@@ -345,6 +346,289 @@ Emsella is a groundbreaking non-invasive treatment that rebuilds pelvic floor st
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Article Content Section with Read More / Read Less */}
+      <section className="py-20 bg-lounge-secondary bg-opacity-20">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="text-3xl md:text-4xl font-cormorant font-light text-lounge-accent text-center mb-8">
+                Emsella Treatment in Pune for Pelvic Health – Zayn Skin Clinic
+              </h2>
+
+              {/* Always visible intro */}
+              <div className="space-y-6 text-gray-700 leading-relaxed text-lg">
+                <p>
+                  Zayn Skin Clinic offers sophisticated non-surgical procedures that help enhance the quality of life and the health of the pelvis. Emsella is one of the latest unique treatments in the market today, which is revolutionary and helps in tightening pelvic floor muscles as well as bladder control without the need to undergo surgery or to be put on hiatus.
+                </p>
+                <p>
+                  Weakness of the pelvic floor may occur in men and women and result in urinary incontinence, discomfort, and lack of confidence. In modern EMSella therapy, patients are able to strengthen the muscles of the pelvis safely and effectively with the use of advanced technology.
+                </p>
+                <p>
+                  Do you experience bladder leakage, weak pelvic muscles, or are you just seeking non-invasive pelvic health treatment? Zayn Skin Clinic is the place that provides you with professional care and sophisticated EMSella treatment that will provide you with visible results.
+                </p>
+
+                <div className="bg-gradient-to-r from-lounge-bg to-lounge-secondary/30 rounded-3xl p-8">
+                  <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-4">
+                    What is Emsella?
+                  </h3>
+                  <p className="mb-4">
+                    EMSella is a non-invasive treatment done on high-intensity electromagnetic technology to activate the pelvic floor muscles. Thousands of supramaximal muscle contractions are produced during the procedure, which assists in strengthening muscles that aid in controlling the bladder.
+                  </p>
+                  <p className="mb-4">
+                    The EMSella treatment procedure is done on a specially designed chair, which stimulates muscles in the pelvic region, and the patient is fully clothed. This renders the process easy, effortless, and appropriate to people who do not want surgical procedures.
+                  </p>
+                  <p className="mb-4">
+                    Many patients prefer EMSella as a non-medical and surgery-free method of enhancing the well-being of the pelvis.
+                  </p>
+                  <p>
+                    Our EMSella sessions at Zayn Skin Clinic are carried out by qualified experts who provide quality and safe individual care to all patients.
+                  </p>
+                </div>
+              </div>
+
+              {/* Expandable content */}
+              <div
+                className={`overflow-hidden transition-all duration-700 ease-in-out ${isExpanded ? 'max-h-[10000px] opacity-100 mt-8' : 'max-h-0 opacity-0'
+                  }`}
+              >
+                <div className="space-y-10 text-gray-700 leading-relaxed text-lg">
+
+                  {/* How Emsella Treatment Works */}
+                  <div>
+                    <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-4">
+                      How Emsella Treatment Works
+                    </h3>
+                    <p className="mb-4">
+                      Emsella treatment is based on the principle of the delivery of an intensive electromagnetic energy to the deep pelvic muscles. These spasms assist in tightening the muscles that support the bladder and pelvic organs.
+                    </p>
+                    <p className="mb-4">
+                      The EMSella device produces many thousands of muscle contractions in every session, which is comparable to thousands of pelvic floor exercises within a brief span of time.
+                    </p>
+                    <p className="mb-4">
+                      This technology enables patients to gain better pelvic muscle strength without much work, as happens in conventional exercises. This leads to improved bladder control, improved pelvic muscle functioning, and enhanced confidence.
+                    </p>
+                    <p>
+                      Many people prefer EMSella as it is a fast treatment, which usually lasts about 30 minutes and has no recovery period.
+                    </p>
+                  </div>
+
+                  {/* Emsella for Women */}
+                  <div className="bg-gradient-to-r from-lounge-bg to-lounge-secondary/30 rounded-3xl p-8">
+                    <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-4">
+                      Emsella for Women – The New Way of Pelvic Health
+                    </h3>
+                    <p className="mb-4">
+                      The issue of pelvic floor weakness seems to be a familiar issue with women, especially after pregnancy, childbirth, or hormonal fluctuations. EMSella is a safe and efficient treatment option that helps women to tighten their pelvic muscles and enhance bladder control.
+                    </p>
+                    <p className="mb-4">
+                      In Zayn Skin Clinic, EMSella for women is the treatment of choice for those who are experiencing stress urinary incontinence, weakness in the pelvis, or pain associated with the loss of strength in pelvic muscles.
+                    </p>
+                    <p className="mb-4">
+                      The procedure EMSella for women is a method that aids in pelvic support and the strength of the muscles without any invasive interventions. The recommended sessions improve bladder control and general pelvic health in many patients.
+                    </p>
+                    <p>
+                      When women seek a safe and effective option in treating their issues, EMSella is the choice most of them settle on since it does not need surgery, injections, or rest.
+                    </p>
+                  </div>
+
+                  {/* Emsella for Men */}
+                  <div>
+                    <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-4">
+                      Stronger Pelvic Muscles – Emsella for Men
+                    </h3>
+                    <p className="mb-4">
+                      Women are not the only people who have problems with their pelvic floor. The pelvic muscle weakness is also common in many men, particularly those who have undergone prostate surgery, old age, or as a result of lifestyle. EMSella for men is a modern approach to strengthening the muscles as well as enhancing the control of the bladder.
+                    </p>
+                    <p className="mb-4">
+                      EMSella is a treatment that is developed to assist in pelvic muscle performance and alleviate urinary incontinence symptoms in men at Zayn Skin Clinic.
+                    </p>
+                    <p className="mb-4">
+                      The EMSella male procedure is effective because it causes deep pelvic muscles to contract in support of the bladder and reproductive organs. This aids in strengthening and managing muscles.
+                    </p>
+                    <p>
+                      The reason why many patients prefer EMSella for men is due to the fact that it is an easy, painless, and efficient process that can be easily accommodated within a tight schedule.
+                    </p>
+                  </div>
+
+                  {/* Advantages */}
+                  <div className="bg-gradient-to-r from-lounge-bg to-lounge-secondary/30 rounded-3xl p-8">
+                    <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-6">
+                      The Advantages of Emsella Treatment
+                    </h3>
+                    <p className="mb-6">
+                      There are several benefits associated with the selection of EMSella as a treatment option by individuals who want to enhance their pelvic health.
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {[
+                        { title: 'Non-Invasive Procedure', desc: 'The EMSella treatment is a totally non-surgical procedure that does not involve needles or medication.' },
+                        { title: 'Comfortable & Convenient', desc: 'Patients are fully clothed as the EMSella device stimulates the muscles of the pelvis.' },
+                        { title: 'Quick Sessions', desc: 'EMSella sessions are typically about 30 minutes, easily incorporated into a daily routine.' },
+                        { title: 'Improves Bladder Control', desc: 'Regular EMSella sessions make pelvic muscles stronger and offer assistance in bladder control.' },
+                        { title: 'Suitable for Men & Women', desc: 'Both EMSella for women and EMSella for men are effective in terms of pelvic health benefits.' }
+                      ].map((item, i) => (
+                        <div key={i} className="flex items-start space-x-3 bg-white rounded-xl p-4 shadow-soft">
+                          <CheckCircle className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
+                          <div>
+                            <h4 className="font-semibold text-lounge-accent mb-1">{item.title}</h4>
+                            <span className="text-sm">{item.desc}</span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Emsculpt Cross-promotion */}
+                  <div className="bg-gradient-to-r from-gold/10 to-yellow-50 rounded-3xl p-8 border border-gold/20">
+                    <p className="text-lounge-accent italic">
+                      Try our advanced EMSculpt Treatment to tone muscles and reduce stubborn fat without surgery. At Zayn Skin Clinic, this innovative body sculpting procedure helps improve muscle definition while supporting effective weight management.
+                    </p>
+                  </div>
+
+                  {/* Treatment Cost */}
+                  <div>
+                    <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-4">
+                      Emsella Treatment Cost in Pune
+                    </h3>
+                    <p className="mb-4">
+                      The EMSella treatment cost varies with various factors, including the number of sessions needed and the treatment plan advised by the specialist.
+                    </p>
+                    <p className="mb-4">
+                      We offer individual consultations at Zayn Skin Clinic and identify the best plan of treatment and negotiate EMSella treatment price depending on the needs.
+                    </p>
+                    <p className="mb-4">
+                      Those patients who are interested in enhancing health in the pelvic area can book an appointment to learn more about EMSella treatment cost and the number of sessions needed.
+                    </p>
+                    <p>
+                      It is our aim that each patient should get good treatment and good guidance regarding their journey to their pelvic health.
+                    </p>
+                  </div>
+
+                  {/* Ideal Candidate */}
+                  <div className="bg-gradient-to-r from-lounge-bg to-lounge-secondary/30 rounded-3xl p-8">
+                    <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-4">
+                      Who Should Be an Ideal Candidate for Emsella?
+                    </h3>
+                    <p className="mb-4">You can use EMSella in case you suffer from:</p>
+                    <ul className="space-y-3">
+                      {[
+                        'Bladder control issues or urinary leaking.',
+                        'Weak pelvic floor muscles.',
+                        'Discomfort following birth or surgery of the pelvis.',
+                        'Inability to perform pelvic exercises well.',
+                        'A desire to have non-surgical treatment of pelvic health.'
+                      ].map((item, i) => (
+                        <li key={i} className="flex items-start space-x-3">
+                          <CheckCircle className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="mt-6">
+                      Both EMSella for women and EMSella for men can be used among adults who seek a secure and contemporary method of enhancing their pelvic muscles. Zayn Skin Clinic specialists have a thorough consultation before prescribing EMSella to achieve the most optimal outcomes.
+                    </p>
+                  </div>
+
+                  {/* What to Expect */}
+                  <div>
+                    <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-4">
+                      What to Expect During an Emsella Session
+                    </h3>
+                    <p className="mb-6">
+                      Visiting Zayn Skin Clinic to have EMSella is quite easy and comfortable.
+                    </p>
+                    <div className="space-y-4">
+                      {[
+                        { step: 'Consultation', desc: 'Our experts assess your symptoms and decide that EMSella therapy is appropriate to your case.' },
+                        { step: 'Treatment Session', desc: 'You will be comfortably seated in the specially designed EMSella chair where you will receive stimulation of pelvic muscles by electromagnetic energy.' },
+                        { step: 'Duration', desc: 'The sessions last approximately half an hour.' },
+                        { step: 'After the Procedure', desc: 'The treatment is non-invasive and therefore patients are allowed to resume their usual activities immediately.' }
+                      ].map((item, i) => (
+                        <div key={i} className="flex items-start space-x-4 bg-gradient-to-r from-lounge-bg to-lounge-secondary/30 rounded-xl p-5">
+                          <div className="w-10 h-10 bg-lounge-accent text-white rounded-full flex items-center justify-center flex-shrink-0 text-lg font-cormorant shadow-luxury">
+                            {i + 1}
+                          </div>
+                          <div>
+                            <h4 className="text-xl font-cormorant font-medium text-lounge-accent mb-1">{item.step}</h4>
+                            <p className="text-gray-600">{item.desc}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Why Choose Zayn */}
+                  <div className="bg-gradient-to-r from-lounge-bg to-lounge-secondary/30 rounded-3xl p-8">
+                    <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-6">
+                      Why Choose Zayn Skin Clinic for Emsella?
+                    </h3>
+                    <p className="mb-6">
+                      The selection of a suitable clinic to undertake pelvic-related health treatments is critical to attaining effective and safe outcomes. Zayn Skin Clinic believes in high-tech medical technologies and individual treatment.
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {[
+                        { title: 'Advanced Technology', desc: 'Modern equipment used is effective in EMSella treatment.' },
+                        { title: 'Experienced Specialists', desc: 'The EMSella treatment will be conducted safely and comfortably by our trained professionals.' },
+                        { title: 'Personalized Care', desc: 'Each patient is given a tailored program that is aimed at optimum outcomes.' },
+                        { title: 'Comfortable Environment', desc: 'Our clinic offers a friendly and professional environment where patients feel comfortable during treatment.' }
+                      ].map((item, i) => (
+                        <div key={i} className="flex items-start space-x-3 bg-white rounded-xl p-4 shadow-soft">
+                          <CheckCircle className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
+                          <div>
+                            <h4 className="font-semibold text-lounge-accent mb-1">{item.title}</h4>
+                            <span className="text-sm">{item.desc}</span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Final CTA */}
+                  <div>
+                    <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-4">
+                      Book Your Emsella Consultation Today
+                    </h3>
+                    <p className="mb-4">
+                      Pelvic health is significant in the general wellbeing and confidence. Patients are able to use new EMSella equipment to work on their pelvic muscles and enhance their control over the bladder, without surgery.
+                    </p>
+                    <p className="mb-4">
+                      In Zayn Skin Clinic, we will focus on EMSella therapy to enable both EMSella for women and EMSella for men to attain improved lives and high quality of health by enhancing their pelvic conditions.
+                    </p>
+                    <p className="font-semibold text-lounge-accent text-xl font-cormorant">
+                      To find out more about the EMSella treatment cost or to book an appointment, call Zayn Skin Clinic and be ready to make the first step to have a better pelvic condition.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Read More / Read Less Button */}
+              <div className="text-center mt-8">
+                <button
+                  onClick={() => setIsExpanded(!isExpanded)}
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-lounge-accent to-lounge-secondary text-white px-8 py-3 rounded-full hover:shadow-luxury transition-all duration-300 text-lg font-semibold group"
+                >
+                  {isExpanded ? (
+                    <>
+                      Read Less
+                      <ChevronUp className="w-5 h-5 group-hover:-translate-y-0.5 transition-transform duration-300" />
+                    </>
+                  ) : (
+                    <>
+                      Read More
+                      <ChevronDown className="w-5 h-5 group-hover:translate-y-0.5 transition-transform duration-300" />
+                    </>
+                  )}
+                </button>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>

@@ -73,6 +73,11 @@ const Footer: React.FC<FooterProps> = ({ variant }) => {
                   Book Appointment
                 </a>
               </li>
+              <li>
+                <Link to="/faq" className="animated-underline">
+                  FAQ
+                </Link>
+              </li>
             </ul>
           </div>
           

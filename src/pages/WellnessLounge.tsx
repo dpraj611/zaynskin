@@ -8,12 +8,12 @@ import TestimonialCard from '../components/ui/TestimonialCard';
 import ArticleCard from '../components/ui/ArticleCard';
 import Button from '../components/ui/Button';
 import TransformationSlider from '../components/ui/TransformationSlider';
-import { 
-  Zap, 
-  Heart, 
-  Droplets, 
-  Flame, 
-  Shield, 
+import {
+  Zap,
+  Heart,
+  Droplets,
+  Flame,
+  Shield,
   Sparkles,
   Star,
   MapPin,
@@ -62,7 +62,7 @@ const WellnessLounge: React.FC = () => {
 
     document.title = 'ZAYN | Luxury Wellness Lounge';
     setIsLoaded(true);
-    
+
     // Load Instagram embed script
     const script = document.createElement('script');
     script.src = 'https://www.instagram.com/embed.js';
@@ -156,12 +156,12 @@ const WellnessLounge: React.FC = () => {
       discount: '25% OFF',
       image: '/images/loungehero.jpg',
       keyBenefits: [
-  'Drastic muscle mass gain in abs & glutes',
-  'Stronger pelvic floor → no more leaks or midnight pees',
-  'Boosted posture, balance & physical performance',
-  'Enhanced sexual health & core-powered confidence',
-  'Non-invasive. Zero downtime. Scientifically proven.'
-],
+        'Drastic muscle mass gain in abs & glutes',
+        'Stronger pelvic floor → no more leaks or midnight pees',
+        'Boosted posture, balance & physical performance',
+        'Enhanced sexual health & core-powered confidence',
+        'Non-invasive. Zero downtime. Scientifically proven.'
+      ],
       whatsappMessage: 'Hi! I\'m interested in the Core to Floor program. Can you provide more details about scheduling and the 25% discount?'
     },
     {
@@ -171,15 +171,15 @@ const WellnessLounge: React.FC = () => {
       duration: '8 weeks',
       sessions: '8 EMSculpt + 12 Infrared sessions',
       discount: '25% OFF',
-      image: '/images/lnc.jpg', 
+      image: '/images/lnc.jpg',
       keyBenefits: [
-    'Burns up to 19% body fat',
-    'Builds lean, toned muscle',
-    'Deep cellular detoxification',
-    'Boosts metabolic rate',
-    'Reduces water retention & bloating',
-    'Improves energy & recovery'
-  ],
+        'Burns up to 19% body fat',
+        'Builds lean, toned muscle',
+        'Deep cellular detoxification',
+        'Boosts metabolic rate',
+        'Reduces water retention & bloating',
+        'Improves energy & recovery'
+      ],
       whatsappMessage: 'Hello! I\'d like to learn more about the Lean & Clean program and the 25% discount offer. What does the treatment schedule look like?'
     },
     {
@@ -191,13 +191,13 @@ const WellnessLounge: React.FC = () => {
       discount: '25% OFF',
       image: '/images/hf2.jpg',
       keyBenefits: [
-    'Glass-like glow with deep hydration',
-    'Cellular nutrition & detoxification',
-    'Brighter, firmer, youthful skin',
-    'Boosts immunity & energy levels',
-    'Reduces fine lines & dullness',
-    'Long-lasting radiance from inside out'
-  ],
+        'Glass-like glow with deep hydration',
+        'Cellular nutrition & detoxification',
+        'Brighter, firmer, youthful skin',
+        'Boosts immunity & energy levels',
+        'Reduces fine lines & dullness',
+        'Long-lasting radiance from inside out'
+      ],
       whatsappMessage: 'Hi there! I\'m interested in the Radiant Revival program and would like to know more about the 25% discount. Could you share more information about the treatment timeline?'
     },
     {
@@ -209,12 +209,12 @@ const WellnessLounge: React.FC = () => {
       discount: '25% OFF',
       image: '/images/hifu2.jpg',
       keyBenefits: [
-      "Non-surgical skin tightening & lifting",
-      "Builds muscle mass",
-      "Reduces fat - no double chin!",
-      "Contours and tones key areas",
-      "Improves skin firmness and elasticity",
-      "Safe, effective, and zero downtime"
+        "Non-surgical skin tightening & lifting",
+        "Builds muscle mass",
+        "Reduces fat - no double chin!",
+        "Contours and tones key areas",
+        "Improves skin firmness and elasticity",
+        "Safe, effective, and zero downtime"
       ],
       whatsappMessage: 'Hi! I\'m interested in the Sculpt & Lift program. Can you provide more details about the HIFU and EMSculpt combination and the 25% discount?'
     },
@@ -227,30 +227,30 @@ const WellnessLounge: React.FC = () => {
       discount: '25% OFF',
       image: '/images/ir1.jpg',
       keyBenefits: [
-      "Enhanced cellular hydration & nutrition",
-      "Deep detoxification and cleansing",
-      "Improved immunity and energy",
-      "Relieves fatigue and muscle tension",
-      "Reduces stress, promotes better sleep",
-      "Supports overall physical recovery"
+        "Enhanced cellular hydration & nutrition",
+        "Deep detoxification and cleansing",
+        "Improved immunity and energy",
+        "Relieves fatigue and muscle tension",
+        "Reduces stress, promotes better sleep",
+        "Supports overall physical recovery"
       ],
       whatsappMessage: 'Hello! I\'d like to learn more about the Wellness & Recovery program combining IV therapy and infrared sauna with 25% discount.'
     },
     {
       title: 'Ultimate Transformation',
-      description:  "Our most luxurious, results-driven transformation. Core strength, skin tightening, pelvic restoration, detox, and visible toning—all in one elite protocol built for those seeking total renewal.",
+      description: "Our most luxurious, results-driven transformation. Core strength, skin tightening, pelvic restoration, detox, and visible toning—all in one elite protocol built for those seeking total renewal.",
       services: ['Emsella', 'EMSculpt', 'HIFU', 'Infrared Sauna'],
       duration: '8 weeks',
       sessions: '6 Emsella + 8 EMSculpt + 2 HIFU + 16 Infrared sessions',
       discount: '35% OFF',
       image: '/images/ultt.jpg',
-     keyBenefits: [
-      "Complete inside-out transformation",
-      "Pelvic floor strengthening & control",
-      "Visible lift and sculpted contours",
-      "Infrared-powered detox and recovery",
-      "Ideal for pre-events, weddings, and lifestyle reset"
-       ],
+      keyBenefits: [
+        "Complete inside-out transformation",
+        "Pelvic floor strengthening & control",
+        "Visible lift and sculpted contours",
+        "Infrared-powered detox and recovery",
+        "Ideal for pre-events, weddings, and lifestyle reset"
+      ],
       whatsappMessage: 'Hi! I\'m interested in the Ultimate Transformation program with all treatments and the 35% discount. Can you provide full details?'
     }
   ];
@@ -262,7 +262,7 @@ const WellnessLounge: React.FC = () => {
       description: "Core to Floor"
     },
     {
-      before: "/images/sd3.png",   
+      before: "/images/sd3.png",
       after: "/images/sd4.png",
       description: "EMSculpt Body Transformation"
     },
@@ -289,6 +289,254 @@ const WellnessLounge: React.FC = () => {
   ];
 
   const blogPosts = [
+    {
+      title: "Case Study: From Crash Diet Failures to Sustainable Results at a Weight Loss Clinic in Pune",
+      excerpt: "Discover how Amit Deshpande broke free from the crash diet cycle and achieved lasting, sustainable weight loss with the help of Zayn Skin Clinic's personalized approach.",
+      image: "/images/blog-weight-loss-clinic.jpg",
+      date: "May 22, 2026",
+      readTime: "14 min read",
+      slug: "weight-loss-case-study-pune"
+    },
+    {
+      title: "Best Hair Loss Treatment in Pune for Healthy and Natural Hair Regrowth",
+      excerpt: "Discover the best hair loss treatment in Pune for healthy and natural hair regrowth. Learn about PRP therapy, mesotherapy, laser treatments, and hair transplant solutions at Zayn Skin Clinic.",
+      image: "/images/blog-hair-loss-treatment-pune-regrowth.jpg",
+      date: "May 21, 2026",
+      readTime: "16 min read",
+      slug: "hair-loss-treatment-pune-healthy-regrowth"
+    },
+    {
+      title: "Effective Acne and Acne Scar Solutions at Zayn Skin Clinic",
+      excerpt: "Discover effective acne and acne scar solutions at Zayn Skin Clinic in Pune. From chemical peels and laser treatments to PRP therapy and microneedling, find personalized acne care for clearer skin.",
+      image: "/images/blog-acne-scar-solutions.jpg",
+      date: "May 16, 2026",
+      readTime: "15 min read",
+      slug: "acne-and-acne-scar-solutions"
+    },
+    {
+      title: "Case Study: Restoring Confidence with Advanced FUE Hair Transplant in Pune",
+      excerpt: "Discover how Rahul Verma overcame 5 years of progressive hair loss and regained a natural-looking hairline through advanced FUE hair transplant at Zayn Skin Clinic in Pune.",
+      image: "/images/blog-best-hair-treatment-pune.jpg",
+      date: "May 13, 2026",
+      readTime: "14 min read",
+      slug: "fue-hair-transplant-case-study-pune"
+    },
+    {
+      title: "Hair Regrowth Treatment Pune for Young Adults: Early Prevention Guide",
+      excerpt: "Discover the best hair regrowth treatment in Pune for young adults. Learn about early prevention, PRP, GFC, laser therapy, and lifestyle tips for healthy hair at Zayn Skin Clinic.",
+      image: "/images/blog-hair-regrowth-treatment.jpg",
+      date: "May 13, 2026",
+      readTime: "14 min read",
+      slug: "hair-regrowth-treatment-pune-young-adults"
+    },
+    {
+      title: "Why Choosing the Right Skin Clinic Matters for Healthy and Glowing Skin",
+      excerpt: "Learn why choosing the right skin clinic matters for healthy, glowing skin. Discover advanced skin treatments, expert dermatology care, and personalized skincare solutions at Zayn Skin Clinic in Pune.",
+      image: "/images/blog-skin-clinic-healthy-skin.jpg",
+      date: "May 09, 2026",
+      readTime: "14 min read",
+      slug: "choosing-right-skin-clinic-healthy-skin"
+    },
+    {
+      title: "Confused About Hair Loss Treatments in Pune? Here's How to Choose the Best One",
+      excerpt: "Confused about hair loss treatments in Pune? Learn how to choose the best hair loss treatment including PRP, GFC, hair transplant, laser therapy, and medications at Zayn Skin Clinic.",
+      image: "/images/blog-hair-loss-treatment-choose-best.jpg",
+      date: "May 05, 2026",
+      readTime: "14 min read",
+      slug: "choosing-best-hair-loss-treatment-pune"
+    },
+    {
+      title: "Best Hair Loss Solutions for Men and Women at Zayn Skin Clinic",
+      excerpt: "Discover the best hair loss solutions for men and women at Zayn Skin Clinic in Pune. From PRP therapy and GFC treatments to advanced hair transplants, find personalized hair restoration care.",
+      image: "/images/blog-hair-loss-solutions.jpg",
+      date: "May 02, 2026",
+      readTime: "15 min read",
+      slug: "best-hair-loss-solutions-men-women"
+    },
+    {
+      title: "Expert 5 Tips to Find the Best Hair Loss Treatment in Pune",
+      excerpt: "Discover 5 expert-backed tips to find the best hair loss treatment in Pune — from understanding causes and choosing advanced therapies to evaluating dermatologists and personalized plans.",
+      image: "/images/blog-best-hair-loss-tips.jpg",
+      date: "April 23, 2026",
+      readTime: "12 min read",
+      slug: "best-hair-loss-treatment-pune-tips"
+    },
+    {
+      title: "Benefits of Choosing Laser Hair Removal Over Waxing in Pune",
+      excerpt: "Discover why laser hair removal in Pune is a better choice than waxing — from long-lasting results and less pain to smoother skin and cost savings over time.",
+      image: "/images/blog-laser-vs-waxing.jpg",
+      date: "April 21, 2026",
+      readTime: "12 min read",
+      slug: "laser-hair-removal-vs-waxing-pune"
+    },
+    {
+      title: "Case Study: Restoring Confidence with the Best Hair Transplant in Pune",
+      excerpt: "Discover how a 34-year-old professional overcame years of progressive hair loss and regained a natural-looking hairline through advanced FUE hair transplant at Zayn Skin Clinic in Pune.",
+      image: "/images/blog-hair-loss-treatment.jpg",
+      date: "April 9, 2026",
+      readTime: "10 min read",
+      slug: "hair-transplant-case-study"
+    },
+    {
+      title: "Case Study: Transforming Confidence with Laser Hair Removal in Pune",
+      excerpt: "Discover how a 29-year-old professional from Pune overcame unwanted body hair and skin irritation through a customized laser hair removal plan at Zayn Skin Clinic, achieving 80–90% permanent hair reduction.",
+      image: "/images/blog-laser-hair-removal.jpg",
+      date: "April 2, 2026",
+      readTime: "10 min read",
+      slug: "laser-hair-removal-case-study"
+    },
+    {
+      title: "Case Study: Transforming Problem Skin with the Right Skin Treatment in Pune",
+      excerpt: "Discover how Ms. Anita, a 29-year-old marketing professional, overcame severe acne, pigmentation, and acne scars through a personalized 4-phase treatment plan at Zayn Skin Clinic in Pune.",
+      image: "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg",
+      date: "March 17, 2026",
+      readTime: "14 min read",
+      slug: "skin-treatment-case-study-pune"
+    },
+    {
+      title: "Case Study: How Zayn Skin Clinic Helped a Patient Achieve Clear and Healthy Skin",
+      excerpt: "Discover how a patient struggling with persistent acne and pigmentation found a lasting solution through personalized dermatological care at Zayn Skin Clinic in Pune.",
+      image: "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg",
+      date: "March 26, 2026",
+      readTime: "12 min read",
+      slug: "clear-skin-case-study"
+    },
+    {
+      title: "Top Clinics Offering the Best Skin Treatment in Pune for Every Skin Type",
+      excerpt: "Discover the best skin treatment options in Pune for every skin type — from oily and dry to sensitive and combination skin — and learn how professional dermatology clinics deliver personalized, advanced care.",
+      image: "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg",
+      date: "March 17, 2026",
+      readTime: "12 min read",
+      slug: "best-skin-treatment-pune"
+    },
+    {
+      title: "Case Study: Successful Hair Restoration with Advanced Care at Zayn Skin Clinic",
+      excerpt: "Discover how a patient with severe hair thinning achieved remarkable results through a personalized hair regrowth treatment plan at Zayn Skin Clinic in Pune.",
+      image: "/images/blog-hair-loss-treatment.jpg",
+      date: "March 18, 2026",
+      readTime: "12 min read",
+      slug: "hair-restoration-case-study"
+    },
+    {
+      title: "Hair Fall Problems? When to See a Hair Growth Specialist in Pune",
+      excerpt: "Learn when it's time to consult a hair growth specialist for persistent hair fall, sudden hair loss, or scalp problems — and explore effective treatment options available in Pune.",
+      image: "/images/blog-hair-loss-treatment.jpg",
+      date: "March 10, 2026",
+      readTime: "12 min read",
+      slug: "hair-growth-specialist-pune"
+    },
+    {
+      title: "What Results Can You Expect from an EMSCULPT Treatment Plan?",
+      excerpt: "Discover how EMSCULPT's HIFEM technology delivers fat reduction, muscle building, and body contouring—without surgery or downtime.",
+      image: "/images/blog-EMSCULPT-Treatment-Plan.jpg",
+      date: "March 8, 2026",
+      readTime: "10 min read",
+      slug: "emsculpt-treatment-plan-results"
+    },
+    {
+      title: "Top Health Benefits of Using an Infrared Sauna Regularly",
+      excerpt: "Discover the holistic health benefits of infrared sauna therapy—from deep detoxification and improved circulation to stress relief, skin rejuvenation, and immune system support.",
+      image: "/images/infrared-sauna-blog.png",
+      date: "March 15, 2026",
+      readTime: "12 min read",
+      slug: "infrared-sauna-benefits"
+    },
+    {
+      title: "The Rise of the Best Fat Loss Treatment in Pune: What's New in 2026?",
+      excerpt: "Discover how advanced fat loss technologies, personalized weight loss programs, and professional clinics in Pune are transforming body contouring in 2026.",
+      image: "/images/blog-fat-loss-treatment.jpg",
+      date: "March 22, 2026",
+      readTime: "12 min read",
+      slug: "best-fat-loss-treatment-pune-2026"
+    },
+    {
+      title: "Best Hair Treatment in Pune for Hair Loss, Thinning, and Baldness",
+      excerpt: "Discover effective solutions for hair loss, thinning, and baldness with modern hair restoration treatments available at top clinics in Pune.",
+      image: "/images/blog-hair-loss-treatment.jpg",
+      date: "March 23, 2026",
+      readTime: "10 min read",
+      slug: "best-hair-treatment-pune"
+    },
+    {
+      title: "Why Visiting a Professional Weight Loss Clinic Pune Matters in 2026",
+      excerpt: "Discover why professional weight loss clinics offer the best path to safe, sustainable results\u2014and how to choose the right one in Pune.",
+      image: "/images/blog-weight-loss-clinic.jpg",
+      date: "February 23, 2026",
+      readTime: "12 min read",
+      slug: "weight-loss-clinic-pune-2026"
+    },
+    {
+      title: "Case Study: Transforming Problem Skin with the Right Skin Treatment in Pune",
+      excerpt: "Discover how Ms. Anita, a 29-year-old marketing professional, overcame severe acne, pigmentation, and acne scars through a personalized 4-phase treatment plan at Zayn Skin Clinic in Pune.",
+      image: "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg",
+      date: "February 18, 2026",
+      readTime: "14 min read",
+      slug: "skin-treatment-pune-case-study"
+    },
+    {
+      title: "Laser Hair Removal in Pune: How Many Sessions Do You Really Need?",
+      excerpt: "Everything you need to know about laser hair removal sessions, results, and choosing the right clinic in Pune for safe and lasting hair reduction.",
+      image: "/images/blog-laser-hair-removal.jpg",
+      date: "February 16, 2026",
+      readTime: "12 min read",
+      slug: "laser-hair-removal-pune-sessions"
+    },
+    {
+      title: "Case Study: Delivering the Best Hair Transplant in Pune – A Zayn Skin Clinic Success Story",
+      excerpt: "Discover how Mr. Raj, a 34-year-old IT professional, achieved a complete hair transformation with a 95% graft survival rate through advanced FUE hair transplant at Zayn Skin Clinic in Pune.",
+      image: "/images/blog-hair-loss-treatment.jpg",
+      date: "February 10, 2026",
+      readTime: "14 min read",
+      slug: "best-hair-transplant-pune-case-study"
+    },
+    {
+      title: "Affordable Yet Best Skin Clinic in Pune \u2013 2026 Cost & Treatment Guide",
+      excerpt: "Your complete guide to finding the best skin clinic in Pune\u2014covering treatment options, costs, and what to expect from a skin specialist consultation.",
+      image: "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg",
+      date: "February 9, 2026",
+      readTime: "12 min read",
+      slug: "best-skin-clinic-pune-2026"
+    },
+    {
+      title: "Hair Regrowth Treatment vs Hair Transplant: Which One Do You Need?",
+      excerpt: "A comprehensive comparison of hair regrowth treatments and hair transplants to help you choose the right solution for your hair loss journey.",
+      image: "/images/blog-hair-regrowth-treatment.jpg",
+      date: "February 2, 2026",
+      readTime: "12 min read",
+      slug: "hair-regrowth-vs-transplant"
+    },
+    {
+      title: "Struggling With Hair Loss? Visit a Trusted Hair Transplant Clinic in Pune",
+      excerpt: "Discover how modern hair transplant techniques and professional care can help you restore your hair and confidence permanently.",
+      image: "/images/blog-hair-loss-treatment.jpg",
+      date: "January 23, 2026",
+      readTime: "10 min read",
+      slug: "hair-transplant-clinic-pune"
+    },
+    {
+      title: "Is Emsella Treatment Safe? What You Need to Know – 2026 Guide",
+      excerpt: "A comprehensive guide to the safety, effectiveness, and benefits of Emsella treatment for pelvic floor strengthening.",
+      image: "/images/blog-emsella-treatment.jpg",
+      date: "January 16, 2026",
+      readTime: "10 min read",
+      slug: "emsella-treatment-safety-guide"
+    },
+    {
+      title: "Emsculpt Treatment Pune: The Future of Fat Loss & Muscle Toning",
+      excerpt: "Discover how Emsculpt's revolutionary HIFEM technology is redefining body contouring with safe, effective, and long-lasting results.",
+      image: "/images/blog-Emsculpt2.jpg",
+      date: "January 9, 2026",
+      readTime: "10 min read",
+      slug: "emsculpt-treatment-pune"
+    },
+    {
+      title: "Top Fat Loss Treatment Options for Safe & Long-Lasting Results",
+      excerpt: "Discover the most effective fat loss treatment options that combine modern science, expert care, and personalized plans for sustainable results.",
+      image: "https://images.pexels.com/photos/4498361/pexels-photo-4498361.jpeg",
+      date: "January 2, 2026",
+      readTime: "10 min read",
+      slug: "top-fat-loss-treatment-options"
+    },
     {
       title: "2026 Guide to Fat Loss Treatment: What Really Works for Sustainable Results",
       excerpt: "Discover the latest advances in fat loss treatments and how to choose the best option for lasting results.",
@@ -419,7 +667,7 @@ const WellnessLounge: React.FC = () => {
   const scrollToServices = () => {
     const servicesSection = document.getElementById('services');
     if (servicesSection) {
-      servicesSection.scrollIntoView({ 
+      servicesSection.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
       });
@@ -429,22 +677,22 @@ const WellnessLounge: React.FC = () => {
   return (
     <div className="bg-lounge-bg">
       <Navigation variant="lounge" />
-      
+
       {/* Hero Section - Clinic Style Layout with Lounge Colors */}
       <section className="relative pt-24 md:pt-32 pb-16 md:pb-20 min-h-[80vh] md:min-h-screen flex items-center bg-gradient-to-br from-lounge-bg via-lounge-secondary/30 to-lounge-accent/10">
         {/* Additional gradient overlays for depth */}
         <div className="absolute inset-0 bg-gradient-to-r from-lounge-bg/80 via-transparent to-lounge-secondary/20"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-transparent via-lounge-bg/10 to-lounge-secondary/5"></div>
-        
+
         {/* Floating decorative elements */}
         <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-gold/10 to-lounge-accent/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-10 w-40 h-40 bg-gradient-to-br from-lounge-accent/10 to-gold/5 rounded-full blur-3xl"></div>
         <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-gradient-to-br from-lounge-secondary/20 to-transparent rounded-full blur-2xl"></div>
-        
+
         {/* Additional gradient overlay for depth */}
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-lounge-secondary/20 to-transparent"></div>
-        
+
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Content */}
@@ -461,7 +709,7 @@ const WellnessLounge: React.FC = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="mb-6 md:mb-8"
               >
-                <img 
+                <img
                   src="/images/zayn-logo.png"
                   alt="ZAYN"
                   className="h-12 md:h-16 lg:h-20 mb-4 md:mb-6 mx-auto lg:mx-0"
@@ -472,21 +720,18 @@ const WellnessLounge: React.FC = () => {
                 Wellness Lounge
               </h1>
               <p className="text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 leading-relaxed font-light text-gray-700 max-w-2xl mx-auto lg:mx-0">
-               We don't treat symptoms, we transform roots.
-From cellular-level therapies to mind-body technologies, everything is designed to realign, restore, and reveal the best version of you.
+                We don't treat symptoms, we transform roots.
+                From cellular-level therapies to mind-body technologies, everything is designed to realign, restore, and reveal the best version of you.
 
 
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-4 mb-8 md:mb-12 justify-center lg:justify-start">
                 <motion.a
                   href="https://www.practo.com/pune/clinic/zayn-skin-hair-and-laser-clinic-camp/overview"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center text-base md:text-lg px-8 md:px-10 py-4 md:py-5 font-semibold bg-gradient-to-r from-gold to-yellow-400 text-white rounded-lg shadow-lg hover:shadow-xl hover:from-yellow-400 hover:to-gold transition-all duration-300"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="inline-block px-8 md:px-10 py-4 md:py-5 text-base md:text-lg font-medium text-white bg-gradient-to-r from-gold to-yellow-400 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:from-yellow-400 hover:to-gold transform hover:scale-105 text-center"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -530,12 +775,12 @@ From cellular-level therapies to mind-body technologies, everything is designed 
               className="relative order-1 lg:order-2 z-10"
             >
               <img
-                src="/images/loungehero.jpg" 
+                src="/images/loungehero.jpg"
                 alt="ZAYN Wellness Lounge"
                 className="w-full h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] object-cover rounded-2xl shadow-luxury"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
-              
+
               {/* Floating elements for visual interest */}
               <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-gold/20 to-lounge-accent/20 rounded-full blur-xl"></div>
               <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-br from-lounge-accent/20 to-gold/20 rounded-full blur-xl"></div>
@@ -589,16 +834,16 @@ From cellular-level therapies to mind-body technologies, everything is designed 
           </div>
         </div>
       </section>
-      
+
       {/* Services Section */}
       <section id="services" className="py-16 md:py-20">
         <div className="container-custom">
-          <SectionHeading 
-            title="Wellness Services" 
+          <SectionHeading
+            title="Wellness Services"
             subtitle="Advanced treatments for holistic wellness and rejuvenation"
             variant="lounge"
           />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <motion.div
@@ -652,7 +897,7 @@ From cellular-level therapies to mind-body technologies, everything is designed 
               <span className="font-semibold">Limited Time: Up to 35% OFF Programs</span>
             </div>
           </motion.div>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
             {programs.map((program, index) => (
               <motion.div
@@ -672,15 +917,15 @@ From cellular-level therapies to mind-body technologies, everything is designed 
                   />
                   {/* Improved Gradient Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent group-hover:from-lounge-accent/60 group-hover:via-gold/20 group-hover:to-transparent transition-all duration-500" />
-                  
+
                   {/* Gold Accent Border on Hover */}
                   <div className="absolute inset-0 border-2 border-transparent group-hover:border-gold/50 transition-all duration-500 rounded-t-3xl" />
-                  
+
                   {/* Discount Badge */}
                   <div className="absolute top-4 right-4 bg-gradient-to-r from-gold to-yellow-400 text-white rounded-full px-4 py-2 shadow-lg">
                     <span className="text-sm font-bold">{program.discount}</span>
                   </div>
-                  
+
                   {/* Program Title Overlay */}
                   <div className="absolute bottom-4 left-4 right-4">
                     <h3 className="text-2xl font-cormorant text-white mb-2 drop-shadow-lg">{program.title}</h3>
@@ -696,11 +941,11 @@ From cellular-level therapies to mind-body technologies, everything is designed 
                     </div>
                   </div>
                 </div>
-                
+
                 {/* Content Section */}
                 <div className="p-8 flex-1 flex flex-col">
                   <p className="text-gray-600 mb-6 leading-relaxed">{program.description}</p>
-                  
+
                   {/* Services Combined */}
                   <div className="mb-6">
                     <h4 className="text-sm font-semibold text-lounge-accent mb-3 uppercase tracking-wider">Services Combined</h4>
@@ -712,7 +957,7 @@ From cellular-level therapies to mind-body technologies, everything is designed 
                       ))}
                     </div>
                   </div>
-                  
+
                   {/* Key Benefits */}
                   <div className="mb-6">
                     <h4 className="text-sm font-semibold text-lounge-accent mb-3 uppercase tracking-wider">Key Benefits</h4>
@@ -730,7 +975,7 @@ From cellular-level therapies to mind-body technologies, everything is designed 
                       )}
                     </div>
                   </div>
-                  
+
                   {/* Program Details */}
                   <div className="flex items-center justify-between mb-6 p-4 bg-gradient-to-r from-lounge-bg to-lounge-secondary/30 rounded-xl">
                     {program.duration ? (
@@ -751,7 +996,7 @@ From cellular-level therapies to mind-body technologies, everything is designed 
                       </div>
                     )}
                   </div>
-                  
+
                   {/* WhatsApp CTA Button - Now at bottom with margin-top auto */}
                   <button
                     onClick={() => handleWhatsAppClick(program.whatsappMessage)}
@@ -786,16 +1031,16 @@ From cellular-level therapies to mind-body technologies, everything is designed 
                     Specialized Program
                   </span>
                 </div>
-                
+
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-pinyon font-light text-lounge-accent mb-6 leading-tight">
                   Best Weight Loss Clinic in Pune
                 </h2>
-                
+
                 <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
-                  Transform your body with our medically-supervised weight loss programs. We combine advanced technology, 
+                  Transform your body with our medically-supervised weight loss programs. We combine advanced technology,
                   personalized nutrition, and expert guidance for lasting results.
                 </p>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-gold flex-shrink-0" />
@@ -814,7 +1059,7 @@ From cellular-level therapies to mind-body technologies, everything is designed 
                     <span className="text-gray-700">Proven results</span>
                   </div>
                 </div>
-                
+
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button
                     to="/weight-loss-clinic-in-pune"
@@ -849,7 +1094,7 @@ From cellular-level therapies to mind-body technologies, everything is designed 
                     className="w-full h-[400px] md:h-[500px] object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-lounge-accent/30 via-transparent to-transparent"></div>
-                  
+
                   {/* Floating stats */}
                   <div className="absolute bottom-6 left-6 right-6">
                     <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
@@ -870,7 +1115,7 @@ From cellular-level therapies to mind-body technologies, everything is designed 
                     </div>
                   </div>
                 </div>
-                
+
                 {/* Decorative elements */}
                 <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-gold/20 to-lounge-accent/20 rounded-full blur-xl"></div>
                 <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-br from-lounge-accent/20 to-gold/20 rounded-full blur-xl"></div>
@@ -883,12 +1128,12 @@ From cellular-level therapies to mind-body technologies, everything is designed 
       {/* Before & After Section */}
       <section id="gallery" className="py-16 md:py-20 bg-gradient-to-br from-lounge-bg to-lounge-secondary">
         <div className="container-custom">
-          <SectionHeading 
-            title="Transformation Gallery" 
+          <SectionHeading
+            title="Transformation Gallery"
             subtitle="Real results from our wellness programs and treatments"
             variant="lounge"
           />
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -933,7 +1178,7 @@ From cellular-level therapies to mind-body technologies, everything is designed 
                 <div className="absolute top-6 right-6 opacity-10 group-hover:opacity-20 transition-opacity duration-300">
                   <Quote size={40} className="text-lounge-accent" />
                 </div>
-                
+
                 <div className="absolute -top-2 -left-2 w-8 h-8 bg-gradient-to-br from-gold to-lounge-accent rounded-full opacity-20"></div>
                 <div className="absolute -bottom-2 -right-2 w-6 h-6 bg-gradient-to-br from-lounge-accent to-gold rounded-full opacity-30"></div>
 
@@ -953,7 +1198,7 @@ From cellular-level therapies to mind-body technologies, everything is designed 
                       ))}
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center justify-between text-sm text-gray-500">
                     <span className="bg-lounge-accent/10 text-lounge-accent px-3 py-1 rounded-full text-xs font-medium">
                       {review.treatment}
@@ -1001,7 +1246,7 @@ From cellular-level therapies to mind-body technologies, everything is designed 
                     4.9<span className="text-lg text-gray-500">/5</span>
                   </div>
                 </div>
-                
+
                 <p className="text-lg text-gray-600 mb-2">Excellent Rating</p>
                 <p className="text-sm text-gray-500 mb-8">Based on 500+ verified Google Reviews</p>
               </div>
@@ -1021,7 +1266,7 @@ From cellular-level therapies to mind-body technologies, everything is designed 
                 </div>
               </div>
 
-              <a 
+              <a
                 href="https://www.google.com/search?q=zayn+skin+clinic&gs_ssp=eJzj4tVP1zc0TDYsL68oTzcwYLRSNagwTko2SjZMskhOTktNNbdMsjKoMDU2MDQwS0pLMbEwtDA0MvISqEqszFMozs7MU0jOyczLTAYAA18VyQ#lrd=0x3bc2c1b8ccfee79b:0x530106bfd4818122,1,,,,"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -1029,10 +1274,10 @@ From cellular-level therapies to mind-body technologies, everything is designed 
               >
                 {/* Google Logo SVG */}
                 <svg className="w-6 h-6 mr-3 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
-                  <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
-                  <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
-                  <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                  <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" />
+                  <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853" />
+                  <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05" />
+                  <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" />
                 </svg>
                 View All Reviews on Google
                 <ExternalLink size={18} className="ml-3 group-hover:translate-x-1 transition-transform duration-300" />
@@ -1045,12 +1290,12 @@ From cellular-level therapies to mind-body technologies, everything is designed 
       {/* Blog Section */}
       <section id="blog" className="py-16 md:py-20 bg-gradient-to-br from-lounge-bg to-lounge-secondary">
         <div className="container-custom">
-          <SectionHeading 
-            title="Wellness Insights" 
+          <SectionHeading
+            title="Wellness Insights"
             subtitle="Expert guidance on wellness, treatments, and lifestyle"
             variant="lounge"
           />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post, index) => (
               <motion.div
@@ -1072,7 +1317,7 @@ From cellular-level therapies to mind-body technologies, everything is designed 
               </motion.div>
             ))}
           </div>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -1090,12 +1335,12 @@ From cellular-level therapies to mind-body technologies, everything is designed 
       {/* Socialise with Us Section */}
       <section className="py-16 md:py-20 bg-white">
         <div className="container-custom">
-          <SectionHeading 
-            title="Socialise with Us" 
+          <SectionHeading
+            title="Socialise with Us"
             subtitle="Follow our wellness journey and discover daily inspiration"
             variant="lounge"
           />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {instagramEmbeds.map((embed, index) => (
               <motion.div
@@ -1106,7 +1351,7 @@ From cellular-level therapies to mind-body technologies, everything is designed 
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="flex justify-center"
               >
-                <div 
+                <div
                   className="w-full max-w-[540px]"
                   dangerouslySetInnerHTML={{ __html: embed.embedCode }}
                 />
@@ -1121,7 +1366,7 @@ From cellular-level therapies to mind-body technologies, everything is designed 
             transition={{ duration: 0.5, delay: 0.4 }}
             className="text-center mt-12"
           >
-            <Button 
+            <Button
               variant="lounge"
               href="https://www.instagram.com/dr.sajidmughal"
               className="inline-flex items-center space-x-2"
@@ -1173,7 +1418,7 @@ From cellular-level therapies to mind-body technologies, everything is designed 
                       </p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start space-x-4">
                     <div className="bg-lounge-accent text-white p-3 rounded-full">
                       <Phone className="w-5 h-5" />
@@ -1183,7 +1428,7 @@ From cellular-level therapies to mind-body technologies, everything is designed 
                       <p className="text-gray-600">070280 07462</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start space-x-4">
                     <div className="bg-lounge-accent text-white p-3 rounded-full">
                       <Clock className="w-5 h-5" />
@@ -1198,7 +1443,7 @@ From cellular-level therapies to mind-body technologies, everything is designed 
                   </div>
                 </div>
               </div>
-              
+
               <div className="pt-6">
                 <Button variant="gold" className="w-full md:w-auto">
                   Book Your Wellness Journey
@@ -1227,14 +1472,14 @@ From cellular-level therapies to mind-body technologies, everything is designed 
                   title="ZAYN Wellness Lounge Location"
                 ></iframe>
               </div>
-                
+
               {/* Overlay with lounge info */}
-              
+
             </motion.div>
           </div>
         </div>
       </section>
-      
+
       {/* CTA Section */}
       <section className="py-16 md:py-20 bg-gradient-to-br from-lounge-accent to-lounge-secondary">
         <div className="container-custom">
@@ -1270,7 +1515,7 @@ From cellular-level therapies to mind-body technologies, everything is designed 
           </div>
         </div>
       </section>
-      
+
       <Footer variant="lounge" />
     </div>
   );

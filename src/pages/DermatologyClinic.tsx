@@ -28,7 +28,9 @@ import {
   Moon,
   Beaker,
   Leaf,
-  Zap as Lightning
+  Zap as Lightning,
+  ChevronDown,
+  ChevronUp
 } from 'lucide-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation as SwiperNavigation, Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
@@ -40,9 +42,11 @@ import Navigation from '../components/common/Navigation';
 import Footer from '../components/common/Footer';
 import Button from '../components/ui/Button';
 import ArticleCard from '../components/ui/ArticleCard';
+import BestDermatologistArticle from '../components/BestDermatologistArticle';
 
 const DermatologyClinic: React.FC = () => {
   const [isLoaded, setIsLoaded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   useEffect(() => {
     // Update document title and meta tags for blog section
@@ -1340,6 +1344,9 @@ link: '/services#hair'
           </div>
         </div>
       </section>
+
+      {/* Best Dermatologist Article Section with Read More / Read Less */}
+      <BestDermatologistArticle />
 
       {/* Visit Our Clinic Section */}
       <section className="py-16 md:py-20 bg-gradient-to-br from-clinic-bg to-clinic-secondary">

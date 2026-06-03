@@ -1,15 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { 
-  ArrowLeft, 
-  Target, 
-  Heart, 
-  Zap, 
-  Shield, 
-  Award, 
-  Users, 
-  CheckCircle, 
+import {
+  ArrowLeft,
+  Target,
+  Heart,
+  Zap,
+  Shield,
+  Award,
+  Users,
+  CheckCircle,
   MessageCircle,
   Phone,
   Calendar,
@@ -19,13 +19,16 @@ import {
   TrendingDown,
   Activity,
   Brain,
-  Sparkles
+  Sparkles,
+  ChevronDown,
+  ChevronUp
 } from 'lucide-react';
 import Navigation from '../components/common/Navigation';
 import Footer from '../components/common/Footer';
 import Button from '../components/ui/Button';
 
 const WeightLoss: React.FC = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
   useEffect(() => {
     document.title = 'Best Weight Loss Clinic in Pune | ZAYN Skin Clinic';
 
@@ -126,7 +129,7 @@ const WeightLoss: React.FC = () => {
       description: "Detailed health and lifestyle analysis to understand your unique needs and goals"
     },
     {
-      step: "02", 
+      step: "02",
       title: "Customized Plan",
       description: "Tailored program combining treatments, nutrition, and lifestyle modifications"
     },
@@ -164,7 +167,7 @@ const WeightLoss: React.FC = () => {
   return (
     <div className="bg-[#f9f5f1] min-h-screen">
       <Navigation variant="lounge" />
-      
+
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-gradient-to-br from-lounge-bg via-lounge-secondary/30 to-lounge-accent/10">
         <div className="container-custom">
@@ -174,14 +177,14 @@ const WeightLoss: React.FC = () => {
             transition={{ duration: 0.8 }}
             className="max-w-6xl mx-auto"
           >
-            <Link 
-              to="/wellness" 
+            <Link
+              to="/wellness"
               className="inline-flex items-center text-lounge-accent hover:text-gold transition-colors duration-300 mb-8"
             >
               <ArrowLeft size={20} className="mr-2" />
               Back to Wellness Lounge
             </Link>
-            
+
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <motion.div
@@ -190,7 +193,7 @@ const WeightLoss: React.FC = () => {
                   transition={{ duration: 0.8, delay: 0.2 }}
                   className="mb-6"
                 >
-                  <img 
+                  <img
                     src="/images/zayn-logo.png"
                     alt="ZAYN"
                     className="h-16 mb-6"
@@ -200,11 +203,11 @@ const WeightLoss: React.FC = () => {
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-light text-lounge-accent mb-6 leading-tight">
                   Best Weight Loss Clinic in Pune
                 </h1>
-                
+
                 <p className="text-xl text-gray-600 leading-relaxed mb-8">
                   Management of weight is not a matter of dieting or exercise, but it involves maintaining a healthy balance between body, mind, and lifestyle.
                 </p>
-                
+
                 <div className="flex flex-col sm:flex-row gap-4">
                   <button
                     onClick={() => handleWhatsAppClick("Hi! I'm interested in your weight loss programs. Can you provide more information about the treatments and pricing?")}
@@ -224,7 +227,7 @@ const WeightLoss: React.FC = () => {
                   </a>
                 </div>
               </div>
-              
+
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -243,6 +246,7 @@ const WeightLoss: React.FC = () => {
         </div>
       </section>
 
+
       {/* What Makes Us Unique Section */}
       <section className="py-20 bg-white">
         <div className="container-custom">
@@ -255,7 +259,7 @@ const WeightLoss: React.FC = () => {
           >
             What Makes ZAYN Skin Clinic Unique?
           </motion.h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {uniqueFeatures.map((feature, index) => (
               <motion.div
@@ -293,7 +297,7 @@ const WeightLoss: React.FC = () => {
           >
             Services at ZAYN Skin Clinic - Your Fat Loss Partner
           </motion.h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {services.map((service, index) => (
               <motion.div
@@ -312,11 +316,11 @@ const WeightLoss: React.FC = () => {
                     {service.title}
                   </h3>
                 </div>
-                
+
                 <p className="text-gray-700 mb-6 leading-relaxed">
                   {service.description}
                 </p>
-                
+
                 <div className="space-y-3">
                   {service.features.map((feature, idx) => (
                     <div key={idx} className="flex items-center">
@@ -344,7 +348,7 @@ const WeightLoss: React.FC = () => {
             >
               Fat Loss vs. Weight Loss: What is the Difference?
             </motion.h2>
-            
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -353,11 +357,11 @@ const WeightLoss: React.FC = () => {
               className="bg-gradient-to-r from-lounge-bg to-lounge-secondary rounded-3xl p-8 mb-8"
             >
               <p className="text-lg text-gray-700 leading-relaxed mb-6 text-center">
-                Most clinics merely aim to get numbers down on the scale, but we stress fat loss, since the objective 
-                of losing fat is never to lose healthy muscle mass. This is the reason why most individuals seeking 
+                Most clinics merely aim to get numbers down on the scale, but we stress fat loss, since the objective
+                of losing fat is never to lose healthy muscle mass. This is the reason why most individuals seeking
                 a fat loss clinic near me end up getting ZAYN Clinic as the solution.
               </p>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="text-center">
                   <div className="w-16 h-16 bg-gold text-white rounded-full flex items-center justify-center mx-auto mb-4">
@@ -370,7 +374,7 @@ const WeightLoss: React.FC = () => {
                     Target stubborn fat areas specifically
                   </p>
                 </div>
-                
+
                 <div className="text-center">
                   <div className="w-16 h-16 bg-gold text-white rounded-full flex items-center justify-center mx-auto mb-4">
                     <Activity size={24} />
@@ -382,7 +386,7 @@ const WeightLoss: React.FC = () => {
                     Maintain and build healthy muscle mass
                   </p>
                 </div>
-                
+
                 <div className="text-center">
                   <div className="w-16 h-16 bg-gold text-white rounded-full flex items-center justify-center mx-auto mb-4">
                     <Heart size={24} />
@@ -450,7 +454,7 @@ const WeightLoss: React.FC = () => {
           >
             Benefits of the Best Weight Loss Clinic
           </motion.h2>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -459,10 +463,10 @@ const WeightLoss: React.FC = () => {
             className="max-w-4xl mx-auto"
           >
             <p className="text-lg text-gray-700 leading-relaxed text-center mb-12">
-              By choosing the most appropriate weight loss clinic, you do not just invest in your appearance, 
+              By choosing the most appropriate weight loss clinic, you do not just invest in your appearance,
               but also in your health, self-esteem, and future life.
             </p>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {benefits.map((benefit, index) => (
                 <motion.div
@@ -494,7 +498,7 @@ const WeightLoss: React.FC = () => {
           >
             Frequently Asked Questions
           </motion.h2>
-          
+
           <div className="max-w-4xl mx-auto space-y-6">
             {faqs.map((faq, index) => (
               <motion.div
@@ -516,6 +520,170 @@ const WeightLoss: React.FC = () => {
           </div>
         </div>
       </section>
+      {/* Article Content Section with Read More / Read Less */}
+      <section className="py-20 bg-white">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="text-3xl md:text-4xl font-cormorant font-light text-lounge-accent text-center mb-8">
+                Best Weight Loss Clinic in Pune – Zayn Skin Clinic
+              </h2>
+
+              {/* Always visible intro */}
+              <div className="space-y-6 text-gray-700 leading-relaxed text-lg">
+                <h3 className="text-2xl font-cormorant font-medium text-lounge-accent">
+                  What is the Benefit of a Professional Weight Loss Clinic?
+                </h3>
+                <p>
+                  Management of weight is not a matter of dieting or exercise, but it involves maintaining a healthy balance between body, mind, and lifestyle. Many people are having problems with impossible-to-get-rid-of fat, insufficient energy, or health-related issues that cannot be addressed by using quick solutions. That is where a special weight loss clinic Pune such as Zayn Skin Clinic, comes in.
+                </p>
+                <p>
+                  At Zayn, we combine medical expertise, advanced technologies, and personalized care to help you achieve long-term results. Whether you're looking to shed extra kilos, tone your body, or enhance overall wellness, our clinic is committed to providing you with the safest and most effective path to transformation.
+                </p>
+              </div>
+
+              {/* Expandable content */}
+              <div
+                className={`overflow-hidden transition-all duration-700 ease-in-out ${isExpanded ? 'max-h-[5000px] opacity-100 mt-8' : 'max-h-0 opacity-0'
+                  }`}
+              >
+                <div className="space-y-10 text-gray-700 leading-relaxed text-lg">
+
+                  {/* Why Patients Visit */}
+                  <div className="bg-gradient-to-r from-lounge-bg to-lounge-secondary/30 rounded-3xl p-8">
+                    <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-4">
+                      The Reasons Why Patients Visit a Weight Loss Clinic Pune, Such as Zayn
+                    </h3>
+                    <p className="mb-6">
+                      The urban culture of places such as Pune is usually characterized by workload, fast food culture and no time to engage in exercise. Because of this, individuals develop fat deposits that are hard to lose and cannot control their weight.
+                    </p>
+                    <p className="font-semibold text-lounge-accent mb-3">Our Pune weight loss clinic specializes in:</p>
+                    <ul className="space-y-3">
+                      {[
+                        'Fat burning without damaging muscle fitness.',
+                        'Increasing metabolism in the long term.',
+                        'Assisting hormone equilibrium and health.',
+                        "Providing surgical and non-invasive solutions based on the patient's requirements."
+                      ].map((item, i) => (
+                        <li key={i} className="flex items-start space-x-3">
+                          <CheckCircle className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Services Detail */}
+                  <div>
+                    <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-4">
+                      Services at Zayn Skin Clinic – Your Fat Loss Partner
+                    </h3>
+                    <div className="space-y-4">
+                      <div>
+                        <h4 className="text-xl font-cormorant font-medium text-lounge-accent">1. Non-Surgical Body Sculpting</h4>
+                        <p>We offer a superior fat-cutting, and shaping procedure to customers who desire inconspicuous outcomes without the need to undergo surgery.</p>
+                      </div>
+                      <div>
+                        <h4 className="text-xl font-cormorant font-medium text-lounge-accent">2. Medical Weight Management Programs</h4>
+                        <p>Individualized nutrition and lifestyle education supported by scientific approaches, not fad diets.</p>
+                      </div>
+                      <div>
+                        <h4 className="text-xl font-cormorant font-medium text-lounge-accent">3. Metabolism Boosting Therapies</h4>
+                        <p>Remedies that boost vitality, and lessen the urge to binge-eat, and maintain a healthy weight.</p>
+                      </div>
+                      <div>
+                        <h4 className="text-xl font-cormorant font-medium text-lounge-accent">4. Emsculpt for Body Sculpting</h4>
+                        <p>A two-in-one type of therapy that provides muscle building and fat burning, which is why it is an alternative to a fat loss clinic near me.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Why Zayn is the Best */}
+                  <div className="bg-gradient-to-r from-lounge-bg to-lounge-secondary/30 rounded-3xl p-8">
+                    <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-4">
+                      Why Zayn is the Best Weight Loss Clinic
+                    </h3>
+                    <p className="mb-4">
+                      Zayn Skin Clinic has established itself as an image of trust, results, and care. Being the finest weight loss clinic, we have integrated technology with holistic wellness. Not only do our patients lose weight, but they also learn how to sustain the weight with healthy lifestyle practices.
+                    </p>
+                  </div>
+
+                  {/* Advanced Technologies */}
+                  <div>
+                    <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-4">
+                      Advanced Technologies at Zayn Skin Clinic
+                    </h3>
+                    <p className="mb-6">
+                      Our weight loss clinic Pune is equipped with cutting-edge devices and medical-grade procedures, such as:
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {[
+                        'Emsculpt Neo (fat reduction + muscle toning)',
+                        'HIFU treatments for tightening skin post-weight loss',
+                        'Cryolipolysis alternatives for stubborn fat',
+                        'Laser therapies for shaping and contouring'
+                      ].map((tech, i) => (
+                        <div key={i} className="flex items-start space-x-3 bg-gradient-to-r from-lounge-bg to-lounge-secondary/30 rounded-xl p-4">
+                          <Sparkles className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
+                          <span>{tech}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Why Search */}
+                  <div className="bg-gradient-to-r from-lounge-bg to-lounge-secondary/30 rounded-3xl p-8">
+                    <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-4">
+                      Why Search "Best Weight Loss Clinic Near Me" When Zayn is Right Here?
+                    </h3>
+                    <p className="mb-4">
+                      People often waste time searching online for the best weight loss clinic near me or fat loss clinic near me. At Zayn, we bring you everything under one roof: professional guidance, advanced treatments, nutritional support, and long-term results.
+                    </p>
+                  </div>
+
+                  {/* Partner in Lasting Transformation */}
+                  <div>
+                    <h3 className="text-2xl font-cormorant font-medium text-lounge-accent mb-4">
+                      Zayn – Your Partner in Lasting Transformation
+                    </h3>
+                    <p className="mb-4">
+                      Zayn Skin Clinic is not any other weight loss clinic in Pune – we are your collaborator in long-term wellness. We are the best weight loss clinic, and we are committed to bringing real, visible, and lasting changes. So, when you are in need of the best weight loss clinic near me or a reliable fat loss clinic near me, your search is over here.
+                    </p>
+                    <p className="font-semibold text-lounge-accent text-xl font-cormorant">
+                      Your confidence, health, and a sculpted body start with Zayn.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Read More / Read Less Button */}
+              <div className="text-center mt-8">
+                <button
+                  onClick={() => setIsExpanded(!isExpanded)}
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-lounge-accent to-lounge-secondary text-white px-8 py-3 rounded-full hover:shadow-luxury transition-all duration-300 text-lg font-semibold group"
+                >
+                  {isExpanded ? (
+                    <>
+                      Read Less
+                      <ChevronUp className="w-5 h-5 group-hover:-translate-y-0.5 transition-transform duration-300" />
+                    </>
+                  ) : (
+                    <>
+                      Read More
+                      <ChevronDown className="w-5 h-5 group-hover:translate-y-0.5 transition-transform duration-300" />
+                    </>
+                  )}
+                </button>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-lounge-accent to-lounge-secondary">
@@ -533,7 +701,7 @@ const WeightLoss: React.FC = () => {
             <p className="text-xl mb-8 leading-relaxed opacity-90">
               If you're ready to transform your body and health, it's time to choose the best weight loss clinic in Pune.
             </p>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
               <div className="flex items-center justify-center space-x-3">
                 <Phone className="w-6 h-6" />
@@ -557,7 +725,7 @@ const WeightLoss: React.FC = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="flex flex-col sm:flex-row justify-center gap-6">
               <button
                 onClick={() => handleWhatsAppClick("Hi! I'm ready to start my weight loss journey. Can you provide more information about your programs and schedule a consultation?")}
